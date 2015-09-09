@@ -1,0 +1,5074 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <title>MAF Dashboard - Broad TCGA GDAC - Broad Institute Confluence</title>
+    
+        
+
+                        
+    
+                        
+    
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE,chrome=IE7">
+<meta charset="UTF-8">
+<!-- Deprecated since 3.4. To be removed in a future version of Confluence; use AJS.Confluence.getContextPath() -->
+<meta id="confluence-context-path" name="confluence-context-path" content="">
+<meta id="confluence-base-url" name="confluence-base-url" content="https://confluence.broadinstitute.org">
+
+<meta id="atlassian-token" name="atlassian-token" content="14f163d90d649b569c85bc388e97e33819130a01">
+
+<meta id="confluence-space-key" name="confluence-space-key" content="GDAC">
+<script type="text/javascript">
+    // Deprecated global variables. To be removed in a future version of Confluence.
+    var contextPath = '';
+</script>
+
+    
+
+<!-- include system css resources -->
+
+
+    <link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/78/_/download/superbatch/css/batch.css" media="all">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/78/_/download/superbatch/css/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<!--[if IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/78/_/download/superbatch/css/batch.css?conditionalComment=IE+9" media="all">
+<![endif]-->
+<!--[if lte IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/78/_/download/superbatch/css/batch.css?conditionalComment=lte+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/78/_/download/superbatch/css/batch.css?media=print" media="print">
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/36ad81d61f0265cdced8afdea9afeaf0/_/download/contextbatch/css/page,viewcontent,main,atl.general/batch.css?conditionalComment=lt+IE+9" media="all">
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/36ad81d61f0265cdced8afdea9afeaf0/_/download/contextbatch/css/page,viewcontent,main,atl.general/batch.css" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/73/_/styles/colors.css?spaceKey=GDAC" media="all">
+<link type="text/css" rel="stylesheet" href="/s/en_GB/3152/7/1.0/_/download/resources/com.atlassian.confluence.themes.default:styles/default-theme.css" media="all">
+
+<!-- end system css resources -->
+
+    <meta name="confluence-request-time" content="1441308956959">
+            <meta name="ajs-page-id" content="55382321">
+            <meta name="ajs-page-title" content="MAF Dashboard">
+            <meta name="ajs-parent-page-id" content="26771802">
+            <meta name="ajs-space-key" content="GDAC">
+            <meta name="ajs-space-name" content="Broad TCGA GDAC">
+            <meta name="ajs-parent-page-title" content="Home">
+            <meta name="ajs-from-page-title" content="">
+            <meta name="ajs-browse-page-tree-mode" content="view">
+            <meta name="ajs-context-path" content="">
+            <meta name="ajs-version-number" content="4.1.10">
+            <meta name="ajs-build-number" content="3152">
+            <meta name="ajs-remote-user" content="">
+            <meta name="ajs-static-resource-url-prefix" content="/s/en_GB/3152/7/_">
+            <meta name="ajs-global-settings-attachment-max-size" content="52428800">
+            <meta name="ajs-user-locale" content="en_GB">
+            <meta name="ajs-enabled-dark-features" content="">
+            <meta name="ajs-atl-token" content="14f163d90d649b569c85bc388e97e33819130a01">
+            
+            <meta name="ajs-use-keyboard-shortcuts" content="true">
+            <meta name="ajs-keyboardshortcut-hash" content="ebaab5922e10d5c389f447abbd776175">
+    <!-- Deprecated since 3.4. To be removed in a future version of Confluence; use atl.header -->
+        
+            <script type="text/x-template" title="share-content-popup">
+    <form action="#" method="post" class="aui share-content-popup">
+        <fieldset>
+            <label for="users">User name or email</label>
+            <div class="autocomplete-user-target">
+                <input class="text autocomplete-sharepage" id="users" data-max="10" data-dropdown-target=".autocomplete-user-target" data-none-message="No matching user or email found"/>
+            </div>
+            <ol class="recipients">
+            </ol>
+            <div><label for="note">Note</label></div>
+            <textarea class="textarea" id="note" placeholder="Add an optional note"/>
+        </fieldset>
+        <div class="button-panel">
+            <div class="progress-messages-icon"></div>
+            <div class="progress-messages">
+            </div>
+            <input class="button submit" type="submit" value="Share" disabled/>
+            <a class="close-dialog" href="#">Cancel</a>
+        </div>
+    </form>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-username">
+    <li data-username="{username}" style="display: none">
+        <span>
+            <img src="{thumbnailLink.href}" title="{title}">
+            <span>{title}</span>
+            <span class="remove-recipient"/>
+        </span>
+    </li>
+</script>
+
+<script type="text/x-template" title="share-content-popup-recipient-email">
+    <li data-email="{email}" style="display: none">
+        <span>
+            <img src="{icon}" title="{email}">
+            <span>{email}</span>
+            <span class="remove-recipient"/>
+        </span>
+    </li>
+</script>
+            <script type="text/x-template" title="gliffy-footer-webpanel">
+    <div class="gliffy-footer-webpanel"><span>This Confluence installation runs a Free Gliffy License - <a href="http://www.gliffy.com/products/confluence-plugin/">Evaluate Gliffy</a> for your Wiki!</span></div>
+</script>
+
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/s/en_GB/3152/7/_/images/logo/confluence_16_white.png">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch/osd.action" title="Broad Institute Confluence"/>
+
+        <!-- include system javascript resources -->
+                        
+    
+    <script type="text/javascript" src="/s/en_GB/3152/7/78/_/download/superbatch/js/batch.js" ></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="/s/en_GB/3152/7/78/_/download/superbatch/js/batch.js?conditionalComment=lte+IE+8" ></script>
+<![endif]-->
+<script type="text/javascript" src="/s/en_GB/3152/7/36ad81d61f0265cdced8afdea9afeaf0/_/download/contextbatch/js/page,viewcontent,main,atl.general/batch.js" ></script>
+
+    
+    <!-- end system javascript resources -->
+
+
+    
+
+    
+    <link rel="canonical" href="https://confluence.broadinstitute.org/display/GDAC/MAF+Dashboard">
+    <link rel="shortlink" href="https://confluence.broadinstitute.org/x/MRFNAw">
+    <meta name="wikilink" content="[GDAC:MAF Dashboard]">
+    <meta name="page-version" content="164">
+
+</head>
+    
+<body             onload="placeFocus()"
+     id="com-atlassian-confluence" class="theme-default ">
+
+        
+    <ul id="assistive-skip-links" class="assistive">
+    <li><a href="#title-heading">Skip to content</a></li>
+    <li><a href="#breadcrumbs">Skip to breadcrumbs</a></li>
+    <li><a href="#header-menu-bar">Skip to header menu</a></li>
+    <li><a href="#navigation">Skip to action menu</a></li>
+    <li><a href="#quick-search-query">Skip to quick search</a></li>
+</ul>
+<div id="page">
+<div id="full-height-container">
+    <div id="header-precursor">
+        <div class="cell">
+            
+                        </div>
+    </div>
+    <div id="header" class="">
+        <div class="cell">
+                              
+    <form id="quick-search" class="quick-search" method="get" action="/dosearchsite.action">
+        <fieldset>
+            <label class="assistive" for="quick-search-query">Quick Search</label>
+            <input id="quick-search-query" class="quick-search-query" type="search" accessKey="q" autocomplete="off" name="queryString" size="25" title="Quick Search" />
+            <input id="quick-search-submit" class="quick-search-submit" type="submit" value="Search" />
+            <div class="aui-dd-parent quick-nav-drop-down"></div>
+        </fieldset>
+        <div class="hidden parameters">
+                                        <!-- putMetadata failed to add value for key "quick-nav-enabled" so rendering metadata inline - see server debug log for details -->
+        <meta name="ajs-quick-nav-enabled" content="true">
+                                                    </div>
+    </form>
+            <ul id="header-menu-bar" class="ajs-menu-bar">
+                                
+        
+            <li class="normal ajs-menu-item">
+        <a id="browse-menu-link" class="browse trigger ajs-menu-title" href="#"><span><span>Browse</span></span></a>         <div class="assistive ajs-drop-down">
+                        <ul  id="browse-menu-link-leading"                 class="section-leading first">
+                                        <li>
+    
+        
+    
+    <a  id="space-pages-link" href="/pages/listpages.action?key=GDAC"  class=""   title="Browse pages in the Broad TCGA GDAC space">
+                   <span>Pages</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-blogposts-link" href="/pages/viewrecentblogposts.action?key=GDAC"  class=""   title="Browse blogs in the Broad TCGA GDAC space">
+                   <span>Blog</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-labels-link" href="/labels/listlabels-heatmap.action?key=GDAC"  class=""   title="Browse labels in the Broad TCGA GDAC space">
+                   <span>Labels</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-attachments-link" href="/spaces/listattachmentsforspace.action?key=GDAC"  class=""   title="Browse attachments in the Broad TCGA GDAC space">
+                   <span>Attachments</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-mail-link" href="/mail/archive/viewmailarchive.action?key=GDAC"  class=""   title="Browse mail in the Broad TCGA GDAC space">
+                   <span>Mail</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  href="/spaces/forums/spaceForums.action?key=GDAC"  class=""   title="">
+                   <span>Forums</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  href="/spaces/usage/report.action?key=GDAC"  class=""   title="">
+                   <span>Activity</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-advanced-link" href="/spaces/viewspacesummary.action?key=GDAC"  class=""   title="Browse additional space functions in the Broad TCGA GDAC space">
+                   <span>Advanced</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="vault-space-data-link" href="/plugins/vault/space/listdata.action?key=GDAC"  class=""  accessKey="vault.space.data.accessKey"  title="">
+                   <span>The Safe</span></a>        </li>
+                            </ul>
+                        <ul  id="browse-menu-link-global"                 class="section-global">
+                                        <li>
+    
+        
+    
+    <a  id="whats-new-menu-link" href="http://docs.atlassian.com/confluence/docs-41/whatsnew/iframe"  class=""   title="">
+                   <span>What’s New</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="space-directory-link" href="/spacedirectory/view.action"  class=""   title="Browse the Confluence space directory">
+                   <span>Space Directory</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  href="/blog"  class=""   title="">
+                   <span>Blogs</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="feed-builder-link" href="/dashboard/configurerssfeed.action"  class=""   title="Create your custom RSS feed.">
+                   <span>Feed Builder</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a  id="keyboard-shortcuts-link" href="#"  class=""   title="View available keyboard shortcuts">
+                   <span>Keyboard Shortcuts</span></a>        </li>
+                                        <li>
+    
+            
+    
+    <a  id="gadget-directory-link" href="#"  class="user-item administration-link"   title="Browse gadgets provided by Confluence">
+                   <span>Confluence Gadgets</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+        
+                                                                         <li class="ajs-menu-item normal">
+        
+        
+    
+    <a  id="login-link" href="/login.action?os_destination=%2Fdisplay%2FGDAC%2FMAF%2BDashboard"  class="user-item login-link"   title="">
+                   <span>Log In</span></a>        </li>
+                                    </ul>
+            
+    
+    <ol id="breadcrumbs">
+                    
+                        
+        <li class="first" >
+                                    <span><a href="/dashboard.action" title="Go to Dashboard">Dashboard</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="/display/GDAC">Broad TCGA GDAC</a></span>
+                </li>
+                                        <li id="ellipsis" title="Show all breadcrumbs"><span><strong>&#8230;</strong></span></li>
+                                    
+                
+        <li class="hidden-crumb" >
+                                    <span><a href="/display/GDAC/Home">Home</a></span>
+                </li>
+                    
+                
+        <li>
+                                    <span><a href="/display/GDAC/MAF+Dashboard">MAF Dashboard</a></span>
+                </li>
+        </ol>
+
+        </div>
+    </div>
+    <!-- \#header -->
+
+        
+    <div id="main" class="">
+        <div id="main-header">
+            
+    <div id="navigation" class="content-navigation view">
+                    <ul class="ajs-menu-bar">
+                                
+                        
+            <li class="normal ajs-menu-item">
+        <a id="action-menu-link" class="action trigger ajs-menu-title" href="#"><span><span>Tools</span></span></a>         <div class="assistive ajs-drop-down">
+                        <ul  id="action-menu-link-primary"                 class="section-primary first">
+                                        <li>
+    
+        
+    
+    <a  id="view-attachments-link" href="/pages/viewpageattachments.action?pageId=55382321"  class="action-view-attachments"  accessKey="a"  title="View Attachments">
+                   <span><u>A</u>ttachments (0)</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="action-view-history-link" href="/pages/viewpreviousversions.action?pageId=55382321"  class="action-view-history"   title="">
+                   <span>Page History</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="action-page-permissions-link" href="/pages/viewinfo.action?pageId=55382321"  class="action-page-permissions"   title="Edit restrictions">
+                   <span>Restrictions</span></a>        </li>
+                            </ul>
+                        <ul  id="action-menu-link-secondary"                 class="section-secondary">
+                                        <li>
+    
+        
+    
+    <a  id="view-page-info-link" href="/pages/viewinfo.action?pageId=55382321"  class="action-view-info"   title="">
+                   <span>Info</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="link-to-page-link" href="/pages/viewinfo.action?pageId=55382321"  class=""   title="Link to this Page">
+                   <span>Link to this Page&hellip;</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="view-in-hierarchy-link" href="/pages/listpages-dirview.action?key=GDAC&amp;openId=55382321#selectedPageInHierarchy"  class=""   title="">
+                   <span>View in Hierarchy</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="action-view-source-link" href="/plugins/viewsource/viewpagesrc.action?pageId=55382321"  class="action-view-source popup-link"   title="">
+                   <span>View Source</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  id="org.randombits.confluence.metadata.viewmetadata" href="/pages/metadata/viewxml.action?pageId=55382321"  class=""   title="">
+                   <span>View Scaffolding XML</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  href="/pages/favourites/pagefavourites.action?pageId=55382321"  class=""   title="">
+                   <span>Favourites</span></a>        </li>
+                                        <li>
+    
+        
+    
+    <a  href="/plugins/lucidchart/selectVisio.action?pageId=55382321"  class=""   title="">
+                   <span>View Visio File</span></a>        </li>
+                            </ul>
+                    </div>
+    </li>
+            </ul>
+    </div>
+
+            
+            <h1 id="title-heading" class="pagetitle">
+                                    <a href="/display/GDAC"><img class="logo space custom" src="/download/attachments/26771801/GDAC?version=1&amp;modificationDate=1305122863000" alt=""></a>                
+                <span id="title-text">
+                                                <a href="/display/GDAC/MAF+Dashboard">MAF Dashboard</a>
+                                    </span>
+            </h1>
+
+        </div><!-- \#main-header -->
+
+        
+
+        <div id="sidebar-container">
+                                                </div><!-- \#sidebar-container -->
+
+        
+    
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+
+
+
+
+        
+
+    
+    
+        
+    
+    
+                    
+    
+
+    
+
+
+<div id="content" class="page view">
+    
+<div id="action-messages">
+    </div>
+
+
+
+                
+<script type="text/x-template" title="movePageDialog">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Specify the new parent page for this page and its children by space and title.
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <fieldset>
+                
+
+    <legend class="assistive"><span>Change the Parent Page to a Known Page</span></legend>
+            <div class="row">
+                <label for="new-space">New space:</label>
+                <div class="value new-space-value">
+                    <input id="new-space-key" name="new-space-key" type="hidden" value="GDAC">
+                                            <span class="space-input">
+                            <input id="new-space" name="new-space" value="Broad TCGA GDAC" disabled="disabled">
+                        </span>
+                        <span class="description warning">You cannot move this page to another space because you do not have permission to remove it from this space.</span>
+                                        <div class="new-space-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="new-parent-page">New parent page:</label>
+                <div class="value new-parent-page-value">
+                    <span class="page-input">
+                        <input id="new-parent-page" name="new-parent-page" value="Home">
+                    </span>
+                    <span class="description">Start typing a page title to see a list of suggestions.</span>
+                    <div class="new-parent-page-dropdown aui-dd-parent autocomplete"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="location-info">
+        <div class="row">
+            <label>Current location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="current-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <label>New location:</label>
+            <div class="value breadcrumbs-container">
+                <div class="breadcrumbs-line">
+                    <ul id="new-parent-breadcrumbs" class="breadcrumbs">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-template" title="movePageSearchPanel">
+    <div class="row information">
+        <div class="inner">
+            <div class="element">
+                Search for and select the new parent page for this page and its children.
+            </div>
+        </div>
+    </div>
+    <div id="move-page-search-container" class="row">
+        <div class="search-form">
+            <fieldset>
+                    
+
+    <legend class="assistive"><span>Search for a New Parent Page</span></legend>
+                    
+
+    <label  for="move-page-search-query" class="assistive">Search keywords</label>
+                <input class="search-query" id="move-page-search-query">
+                    
+
+    <label  for="move-page-search-space" class="assistive">Search in space</label>
+                                    <select id="move-page-search-space" class="search-space" disabled="disabled">
+                        <option value="GDAC" selected="selected">Broad TCGA GDAC</option>
+                    </select>
+                                <input type="button" value="Search">
+                                    <div class="description warning">You cannot move this page to another space because you do not have permission to remove it from this space.</div>
+                            </fieldset>
+        </div>
+        <div class="search-results">
+        </div>
+    </div>
+</script>
+<script type="text/x-template" title="searchResultsGrid">
+    <table>
+        <thead>
+            <tr class="header">
+                <th class="search-result-title">Page Title</th>
+                <th class="search-result-space">Space</th>
+                <th class="search-result-date">Updated</th>
+            </tr>
+        </thead>
+    </table>
+</script>
+<script type="text/x-template" title="searchResultsGridCount">
+    <p class="search-result-count">{0}</p>
+</script>
+<script type="text/x-template" title="searchResultsGridRow">
+    <tr class="search-result">
+        <th class="search-result-title"><a href="{1}" class="content-type-{2}"><span>{0}</span></a></th>
+        <td class="search-result-space"><a class="space" href="/display/{4}/" title="{3}">{3}</a></td>
+        <td class="search-result-date"><span class="date" title="{6}">{5}</span></td>
+    </tr>
+</script><!-- Start restrictions section -->
+<script type="text/x-template" title="page-permissions-div">
+<div id="page-permissions-div">
+    <div id="page-permissions-editor-form">
+
+                <div id="page-permissions-error-div" class="hidden">
+            <a href="#" id="permissions-error-div-close">Ok</a>
+            <div></div>
+        </div>
+
+                <div id="page-permissions-type-radios" class="page-permissions-label-rows">
+            <div>
+                <input id="restrictViewRadio" type="radio" checked="checked" name="pagePermissionTypeRadio" value="view"/>
+                <label for="restrictViewRadio">Restrict viewing of this page</label>
+                <input id="restrictEditRadio" type="radio" name="pagePermissionTypeRadio" value="edit"/>
+                <label for="restrictEditRadio">Restrict editing of this page</label>
+            </div>
+        </div>
+        <div id="page-permissions-input" class="page-permissions-label-rows">
+            <div class="page-permissions-label">To:</div>
+            <div id="page-permissions-chooser-box">
+                                <span id="page-permissions-choose-user" class="ajs-button">
+                    
+
+
+
+    
+
+
+
+<a href="#" id='userpicker-popup-link-image' onClick="var picker = window.open('/spaces/openuserpicker.action?key=GDAC&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;"><img src="/s/en_GB/3152/7/_/images/icons/user_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose users" /></a>
+<a href="#" id='userpicker-popup-link-text' onClick="var picker = window.open('/spaces/openuserpicker.action?key=GDAC&amp;startIndex=0&amp;onPopupSubmit=AJS.PagePermissions.addUserPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=700,height=680,scrollbars=yes'); picker.focus(); return false;">Person...</a>
+
+
+                </span>
+                <span id="page-permissions-choose-group" class="ajs-button">
+                    
+
+
+
+    
+
+ 
+
+<a href="#" id='grouppicker-popup-link-image' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=GDAC&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;"><img src="/s/en_GB/3152/7/_/images/icons/group_16.gif" height=16 width=16 border=0 align="absmiddle"  title="Choose groups" /></a>
+<a href="#" id='grouppicker-popup-link-text' onClick="var picker = window.open('/spaces/opengrouppicker.action?key=GDAC&amp;startIndex=0&amp;actionName=dosearchgroups.action&amp;onPopupSubmit=AJS.PagePermissions.addGroupPermissions', 'EntitiesPicker', 'status=yes,resizable=yes,top=100,left=200,width=580,height=550,scrollbars=yes'); picker.focus(); return false;">Group...</a>
+
+
+                </span>
+            </div>
+            <div id="page-permissions-input-box">
+                <input type="text" id="page-permissions-names-input" name="permissionNames"
+                    placeholder="Enter user or group name" class="autocomplete-user"
+                    data-max="10" data-none-message="No matches"
+                    data-target="#page-permissions-names-hidden" data-template="{username}"
+                    data-dropdown-target="#page-perms-name-dropdown-wrapper" data-resize-to-input="true"
+                    size="30"/>
+                <input
+    type="hidden"
+                            id="page-permissions-names-hidden"           />                <img height="16px" width="1px" src="/s/en_GB/3152/7/_/images/border/spacer.gif"/>
+                <input type="button" id="add-typed-names" value="Restrict">
+                <div id="page-perms-name-dropdown-wrapper" class="aui-dd-parent autocomplete"></div>
+            </div>
+        </div>
+    </div>
+    <div id="page-permissions-tables">
+        <div id="page-permissions-table-div">
+                        <table id="page-permissions-table" class="page-permissions-table">
+                <tr id="page-permissions-no-views" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No view restrictions are defined for this page</span></td>
+                </tr>
+                <tr id="page-permissions-no-edits" class="marker-row">
+                    <td colspan="3" class="page-permissions-marker-cell"><span>No edit restrictions are defined for this page</span></td>
+                </tr>
+            </table>
+        </div>
+        <div id="page-inherited-permissions-table-div" class="hidden">
+            <span id="page-inherited-permissions-table-desc">
+                <a class="icon twisty-closed">Show/Hide</a>
+                <a id="toggle-inherited-permissions" title="Click to see inherited restrictions">This page has restricted parent pages. It can only be seen by users who can see those parent pages.</a>
+            </span>
+            <div id="page-inherited-permissions-tables" class="hidden page-inheritance-togglable"></div>
+        </div>
+    </div>
+</div>
+</script>
+
+<!-- End restrictions section -->
+
+        
+    
+    
+        
+                            
+    
+
+                    
+
+        
+        <a href="#page-metadata-end" class="assistive">Skip to end of metadata</a>
+<div id="page-metadata-start" class="assistive"></div>
+
+    <div class="page-metadata">
+        <ul>
+                            <li class="page-metadata-item noprint">
+    
+            
+    
+    <a  id="content-metadata-page-restrictions" href="#"  class="page-metadata-icon page-restrictions hidden"   title="Page restrictions apply. Click the lock icon to view or edit the restriction.">
+                   <span>Page restrictions apply</span></a>        </li>
+                        <li class="page-metadata-modification-info">
+                                    Added by <a href="/display/~dheiman"
+                          class="url fn"
+                   >David Heiman</a>, last edited by <a href="/display/~gdac"
+                          class="url fn"
+                   >gdac role</a> on Sep 02, 2015
+                                                                <span class="noprint">&nbsp;(<a id="view-change-link" href="/pages/diffpages.action?pageId=55382321&originalId=67405686">view change</a>)</span>
+                                                </li>
+                    </ul>
+                </div>
+
+
+<a href="#page-metadata-start" class="assistive">Go to start of metadata</a>
+<div id="page-metadata-end" class="assistive"></div>
+        
+                                
+        <div id="main-content" class="wiki-content">
+                           <h4 id="MAFDashboard-NotesamplecountsreflectthesourceMAFspriortoFirehoseingestthecountsmaybereducedduringingestprocessingduetoredactionsblacklistingetc">Note: sample counts reflect the source MAFs prior to Firehose ingest; the counts may be reduced during ingest &amp; processing due to redactions, blacklisting, etc</h4><h3 id="MAFDashboard-MAFsIngestedintoBroadGDACFirehoseasof20August2015MAFsIngestedintoBroadGDACFirehose"><span style="font-size: 18.0pt;">MAFs Ingested into Broad GDAC Firehose as of 20 August 2015</span><style type="text/css">
+
+tr:nth-child(even) {
+	background-color: lightblue;
+}
+table.confluenceTable th.confluenceTh, table.confluenceTable td.confluenceTd {
+	vertical-align: middle;
+	text-align: center;
+}
+
+</style>
+
+<table class="confluenceTable">
+<tr>
+<th class="confluenceTh">
+<p>Tumor Type</p></th>
+<th class="confluenceTh">
+<p>Center</p></th>
+<th class="confluenceTh">
+<p>Tumor Samples</p></th>
+<th class="confluenceTh">
+<p>Normal Samples</p></th>
+<th class="confluenceTh">
+<p>Mutations</p></th>
+<th class="confluenceTh">
+<p>Columns</p></th>
+<th class="confluenceTh">
+<p>File Name</p></th>
+<th class="confluenceTh">
+<p>Size</p></th>
+<th class="confluenceTh">
+<p>Last Modified</p></th>
+<th class="confluenceTh">
+<p>md5sum</p></th></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>ACC</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>20166</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>7.7MB</p></td>
+<td class="confluenceTd">
+<p>02 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>0851ed2831c86203b61dfd0f77d30737</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>BLCA</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>130</p></td>
+<td class="confluenceTd">
+<p>130</p></td>
+<td class="confluenceTd">
+<p>39312</p></td>
+<td class="confluenceTd">
+<p>95</p></td>
+<td class="confluenceTd">
+<p>BLCA130_somatic_updated.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>34.8MB</p></td>
+<td class="confluenceTd">
+<p>23 Apr 2014</p></td>
+<td class="confluenceTd">
+<p>3c4584f577916f340e6c562d4a708a7e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>396</p></td>
+<td class="confluenceTd">
+<p>411</p></td>
+<td class="confluenceTd">
+<p>138723</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_BLCA_PAIR_Capture_All_Pairs_QCPASS_v6.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>133.3MB</p></td>
+<td class="confluenceTd">
+<p>03 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>8c2a33e5a266a63e383fe47170fab153</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>BRCA</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>993</p></td>
+<td class="confluenceTd">
+<p>1032</p></td>
+<td class="confluenceTd">
+<p>90490</p></td>
+<td class="confluenceTd">
+<p>67</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.1.1.0.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>52.0MB</p></td>
+<td class="confluenceTd">
+<p>08 Feb 2014</p></td>
+<td class="confluenceTd">
+<p>f823427c6ea3d520fb72379da8ba63dd</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>CESC</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>46547</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_CESC.IlluminaGA_DNASeq_curated.Level_2.1.0.0.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>24.0MB</p></td>
+<td class="confluenceTd">
+<p>22 Aug 2014</p></td>
+<td class="confluenceTd">
+<p>47f3a41c53d1d8a36004d7311b4c4a29</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>CHOL</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>6755</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.4MB</p></td>
+<td class="confluenceTd">
+<p>01 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>8db4269d8aba6d8d397e2761e24e8e6e</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>COAD</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>214</p></td>
+<td class="confluenceTd">
+<p>214</p></td>
+<td class="confluenceTd">
+<p>140005</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_COAD.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>38.6MB</p></td>
+<td class="confluenceTd">
+<p>14 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>c0333eebd4fadea249acdd7334b3fb63</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>10986</p></td>
+<td class="confluenceTd">
+<p>41</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_COAD.SOLiD_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>3.4MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>35d3d4fcc399b0ef97cd76dd564e09c0</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>11578</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu-COAD-from-BCM-Firehose-CRC-08nov11.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.8MB</p></td>
+<td class="confluenceTd">
+<p>18 Dec 2012</p></td>
+<td class="confluenceTd">
+<p>6065b55a82518412be125d55a6307179</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>102</p></td>
+<td class="confluenceTd">
+<p>102</p></td>
+<td class="confluenceTd">
+<p>48984</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>broad.mit.edu_COAD.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>12.3MB</p></td>
+<td class="confluenceTd">
+<p>14 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>56e71be70523c470c9948ecfbb4a4ed1</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>102</p></td>
+<td class="confluenceTd">
+<p>102</p></td>
+<td class="confluenceTd">
+<p>50982</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_COAD.IlluminaGA_DNASeq.1.broad.mit.edu.maf.txt</p></td>
+<td class="confluenceTd">
+<p>12.8MB</p></td>
+<td class="confluenceTd">
+<p>23 Jul 2012</p></td>
+<td class="confluenceTd">
+<p>b55060ac2c5f4d203faec91622a2b427</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>DLBC</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>76860</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_DLBC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>33.9MB</p></td>
+<td class="confluenceTd">
+<p>19 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>9e4e7a1b2c19ff80f2c47e39ea721250</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>GBM</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>22166</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>gbm_liftover.aggregated.capture.tcga.uuid.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>19.2MB</p></td>
+<td class="confluenceTd">
+<p>01 Mar 2013</p></td>
+<td class="confluenceTd">
+<p>1ee5e9b937ef29b1b3ccc0f6b454f886</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>22166</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>step4_gbm_liftover.aggregated.capture.tcga.uuid.maf2.4.migrated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>22.3MB</p></td>
+<td class="confluenceTd">
+<p>01 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>ccc87a23df3f6f00e0e3554d1bc892d2</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>HNSC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>279</p></td>
+<td class="confluenceTd">
+<p>279</p></td>
+<td class="confluenceTd">
+<p>51799</p></td>
+<td class="confluenceTd">
+<p>89</p></td>
+<td class="confluenceTd">
+<p>pair_set_279_freeze_Mar262013.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>46.2MB</p></td>
+<td class="confluenceTd">
+<p>13 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>2f88489506d6a2c68cace24046e30bd1</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>509</p></td>
+<td class="confluenceTd">
+<p>567</p></td>
+<td class="confluenceTd">
+<p>120520</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_HNSC_PAIR_Capture_All_Pairs_QCPASS_v4.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>116.3MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>9905477ac6fac3d5541f8c1b6fac81c8</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>KICH</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>7559</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.7MB</p></td>
+<td class="confluenceTd">
+<p>01 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>aeb06b199e6269e5acd8252516c20c12</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>7559</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.7MB</p></td>
+<td class="confluenceTd">
+<p>27 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>aeb06b199e6269e5acd8252516c20c12</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>KIRC</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>120</p></td>
+<td class="confluenceTd">
+<p>120</p></td>
+<td class="confluenceTd">
+<p>7216</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRC.SOLiD_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.0MB</p></td>
+<td class="confluenceTd">
+<p>21 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>fed13b3c80ead3d44af2d81bd90a7b5c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>120</p></td>
+<td class="confluenceTd">
+<p>120</p></td>
+<td class="confluenceTd">
+<p>7216</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRC.SOLiD_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.0MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>fed13b3c80ead3d44af2d81bd90a7b5c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>189</p></td>
+<td class="confluenceTd">
+<p>189</p></td>
+<td class="confluenceTd">
+<p>9049</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.6MB</p></td>
+<td class="confluenceTd">
+<p>21 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>ad0dfabf944888699af7c5170d056ec8</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>372</p></td>
+<td class="confluenceTd">
+<p>372</p></td>
+<td class="confluenceTd">
+<p>21611</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>6.3MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>cc7e6cb98a67e712568c37664bb248d7</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>12562</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>broad.mit.edu_KIRC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>3.7MB</p></td>
+<td class="confluenceTd">
+<p>21 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>e20bc14d4a210ba329017eba10849111</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>67</p></td>
+<td class="confluenceTd">
+<p>21559</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_KIRC_PAIR_Capture_All_Pairs_QCPASS_v3.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>20.5MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>5c614f4d5cb8f2a83201103d42f06ec4</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>KIRP</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>15585</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>5.8MB</p></td>
+<td class="confluenceTd">
+<p>01 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>3ddcaf0557a6fb8b8e553a950991b263</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>15585</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>5.8MB</p></td>
+<td class="confluenceTd">
+<p>06 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>3ddcaf0557a6fb8b8e553a950991b263</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>LAML</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>197</p></td>
+<td class="confluenceTd">
+<p>197</p></td>
+<td class="confluenceTd">
+<p>2585</p></td>
+<td class="confluenceTd">
+<p>64</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_LAML.IlluminaGA_DNASeq.Level_2.2.13.0.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>1.5MB</p></td>
+<td class="confluenceTd">
+<p>09 Dec 2013</p></td>
+<td class="confluenceTd">
+<p>ab6c720a25fbf438a78133a0011469ec</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>LGG</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>286</p></td>
+<td class="confluenceTd">
+<p>286</p></td>
+<td class="confluenceTd">
+<p>9885</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>LGG_FINAL_ANALYSIS.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>3.0MB</p></td>
+<td class="confluenceTd">
+<p>13 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>4b0844f47131ecb12426069a8d93165a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>530</p></td>
+<td class="confluenceTd">
+<p>513</p></td>
+<td class="confluenceTd">
+<p>49197</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_LGG_PAIR_Capture_All_Pairs_QCPASS_v7.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>48.1MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>dedcaf1ab0201c58b1c1cd040093b62c</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>LIHC</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>27892</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>10.8MB</p></td>
+<td class="confluenceTd">
+<p>12 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>b8d47374da88802fb8d1bd904d88df8f</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>LUAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>230</p></td>
+<td class="confluenceTd">
+<p>230</p></td>
+<td class="confluenceTd">
+<p>72541</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>AN_TCGA_LUAD_PAIR_capture_freeze_FINAL_230.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>64.6MB</p></td>
+<td class="confluenceTd">
+<p>03 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>82873d928fd40677e8ef0de26ae8c63c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>561</p></td>
+<td class="confluenceTd">
+<p>606</p></td>
+<td class="confluenceTd">
+<p>255972</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_LUAD_PAIR_Capture_All_Pairs_QCPASS_v4.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>241.8MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>4439b81fdb5073248186e977c70eb789</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>LUSC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>65305</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>LUSC_Paper_v8.aggregated.tcga.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>55.4MB</p></td>
+<td class="confluenceTd">
+<p>20 Feb 2013</p></td>
+<td class="confluenceTd">
+<p>a77f0045ee8341c4fd852a8ce0d0ab09</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>OV</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>82</p></td>
+<td class="confluenceTd">
+<p>3992</p></td>
+<td class="confluenceTd">
+<p>44</p></td>
+<td class="confluenceTd">
+<p>AN_PAPER_OV_489.hgsc.bcm.edu_20111118.maf.txt</p></td>
+<td class="confluenceTd">
+<p>1.0MB</p></td>
+<td class="confluenceTd">
+<p>18 Dec 2012</p></td>
+<td class="confluenceTd">
+<p>e9289788b76db195b4476db3a1142404</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>3557</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_OV.SOLiD_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>984.4KB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>4feca0fb9fb9dddbcd04d76f6ee886c5</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>6308</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.7.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>1.8MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>0d71eaab5be42d3ee79722617dea9529</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>148</p></td>
+<td class="confluenceTd">
+<p>148</p></td>
+<td class="confluenceTd">
+<p>9851</p></td>
+<td class="confluenceTd">
+<p>44</p></td>
+<td class="confluenceTd">
+<p>AN_PAPER_OV_489.broad.mit.edu_20111118.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.3MB</p></td>
+<td class="confluenceTd">
+<p>18 Dec 2012</p></td>
+<td class="confluenceTd">
+<p>a8cddecdcc25050d22d7149403d99280</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>236</p></td>
+<td class="confluenceTd">
+<p>236</p></td>
+<td class="confluenceTd">
+<p>18045</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_OV.IlluminaGA_DNASeq.2.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>8.9MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>2226c4e6d70d2ecd9ce6827a3e719d0a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>88</p></td>
+<td class="confluenceTd">
+<p>88</p></td>
+<td class="confluenceTd">
+<p>6376</p></td>
+<td class="confluenceTd">
+<p>44</p></td>
+<td class="confluenceTd">
+<p>AN_PAPER_OV_489.genome.wustl.edu_20111118.maf.txt</p></td>
+<td class="confluenceTd">
+<p>1.7MB</p></td>
+<td class="confluenceTd">
+<p>18 Dec 2012</p></td>
+<td class="confluenceTd">
+<p>2bc6f441239abf10c3963535a28237eb</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>PAAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>37705</p></td>
+<td class="confluenceTd">
+<p>84</p></td>
+<td class="confluenceTd">
+<p>freeze2.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>37.8MB</p></td>
+<td class="confluenceTd">
+<p>10 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>97bdfba4b10d79efb91a54f135fec749</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>PCPG</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>181</p></td>
+<td class="confluenceTd">
+<p>4602</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_PCPG_PAIR_Capture_All_Pairs_QCPASS_v1.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>4.0MB</p></td>
+<td class="confluenceTd">
+<p>07 Jul 2014</p></td>
+<td class="confluenceTd">
+<p>28a26779708de17e55ce13fdf9a29e9f</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>PRAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>332</p></td>
+<td class="confluenceTd">
+<p>332</p></td>
+<td class="confluenceTd">
+<p>12348</p></td>
+<td class="confluenceTd">
+<p>85</p></td>
+<td class="confluenceTd">
+<p>PRAD_Capture_All_Pairs_QCPASS_v6_Nikki_Nov_25.hugo_entrez_remapped.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>12.0MB</p></td>
+<td class="confluenceTd">
+<p>07 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>72d385811ace3d19dc176ea89efae785</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>READ</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>9287</p></td>
+<td class="confluenceTd">
+<p>41</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_READ.SOLiD_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.9MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>4647a72739535202046dd0645b8bcf78</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>9460</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu-READ-from-BCM-Firehose-CRC-08nov11.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.3MB</p></td>
+<td class="confluenceTd">
+<p>18 Dec 2012</p></td>
+<td class="confluenceTd">
+<p>40f57301c0345948fcd731b74c26646c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>12437</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_READ.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>3.5MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>fc08dc07ecc2a7de4edfaa7a4c23b100</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>19625</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_READ.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>4.9MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>f9ebc047eef8f33b6f1ce6725c7d17a1</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>19953</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>broad.mit.edu-READ-from-BCM-Firehose-CRC-08nov11.maf.txt</p></td>
+<td class="confluenceTd">
+<p>4.7MB</p></td>
+<td class="confluenceTd">
+<p>25 Nov 2011</p></td>
+<td class="confluenceTd">
+<p>b304798b82f4b503e09997371c7cab46</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>SARC</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>247</p></td>
+<td class="confluenceTd">
+<p>247</p></td>
+<td class="confluenceTd">
+<p>26507</p></td>
+<td class="confluenceTd">
+<p>77</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_SARC.IlluminaHiSeq_DNASeq_automated.1.1.0.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>16.1MB</p></td>
+<td class="confluenceTd">
+<p>24 May 2015</p></td>
+<td class="confluenceTd">
+<p>5f2a45a4679ee7f51bff49515f291e91</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>SKCM</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>346</p></td>
+<td class="confluenceTd">
+<p>345</p></td>
+<td class="confluenceTd">
+<p>290341</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>skcm_clean_pairs.aggregated.capture.tcga.uuid.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>282.7MB</p></td>
+<td class="confluenceTd">
+<p>15 Nov 2013</p></td>
+<td class="confluenceTd">
+<p>a2afad3719c3507170a718b0fa5138f9</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>369</p></td>
+<td class="confluenceTd">
+<p>369</p></td>
+<td class="confluenceTd">
+<p>324163</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_SKCM_PAIR_Capture_All_Pairs_QCPASS_v4.hugo_entrez_remapped.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>305.5MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>71aa8527cb698bffef1fc99fb0d3d9d1</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>STAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>148520</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>QCv5_blacklist_Pass.aggregated.capture.tcga.uuid.curated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>128.7MB</p></td>
+<td class="confluenceTd">
+<p>05 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>ef02d98be7388051e5fe3a98e1520777</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>TGCT</p></th>
+<td class="confluenceTd">
+<p>bcm.edu</p></td>
+<td class="confluenceTd">
+<p>155</p></td>
+<td class="confluenceTd">
+<p>149</p></td>
+<td class="confluenceTd">
+<p>14672</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq.1.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>5.3MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>19073e0848820c0becf005e3212828ca</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>THCA</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>405</p></td>
+<td class="confluenceTd">
+<p>425</p></td>
+<td class="confluenceTd">
+<p>7458</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>AN_TCGA_THCA_PAIR_Capture_ALLQC_14Aug2013_429.aggregated.capture.tcga.uuid.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>8.1MB</p></td>
+<td class="confluenceTd">
+<p>18 Sep 2013</p></td>
+<td class="confluenceTd">
+<p>3edf75d78bed78876a12808ab710ca01</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>UCEC</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>248</p></td>
+<td class="confluenceTd">
+<p>248</p></td>
+<td class="confluenceTd">
+<p>184861</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>genome.wustl.edu_UCEC.IlluminaGA_DNASeq.Level_2.1.7.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>73.7MB</p></td>
+<td class="confluenceTd">
+<p>19 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>dd28fc297e773dd72d23ef5d9385e117</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>UCS</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>11339</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_UCS_PAIR_Capture_All_Pairs_QCPASS_v1.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>10.7MB</p></td>
+<td class="confluenceTd">
+<p>12 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>a357468ffbeacc184a0c4932c3b2d395</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>UVM</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>2528</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>PR_TCGA_UVM_PAIR_Capture_All_Pairs_QCPASS_v1.aggregated.capture.tcga.uuid.automated.somatic.maf.txt</p></td>
+<td class="confluenceTd">
+<p>2.3MB</p></td>
+<td class="confluenceTd">
+<p>05 Nov 2014</p></td>
+<td class="confluenceTd">
+<p>6adba3391c638f0b6691b57dc82d72ff</p></td></tr></table></h3><p> </p><div id="expander-1403077185" class="expand-container">
+<div id="expander-control-1403077185" class="expand-control">
+    <span class="expand-control-icon">&nbsp;</span><span class="expand-control-text">Click here for DCC archive versioning information</span>
+</div>
+<div id="expander-content-1403077185" class="expand-content expand-hidden"><ul><li class="p1">Format: &lt;Serial Index&gt;.&lt;Revision&gt;.0</li><li class="li1">Serial Index:<ul><li class="li1">WashU: Increments after each Data Freeze by the AWG, all uploaded MAFs are AWG-curated</li><li class="li1">Broad: 0 indicates Auto-GSC generated MAF, 1 indicates AWG-curated MAF</li><li class="li1">Baylor: ?</li></ul></li><li class="li1">Revision:<ul class="ul2"><li class="li1">WashU: Changes since last Data Freeze (resets with increment of Serial Index)</li><li class="li1">Broad: Current data revision (archive version 1.n.0 based on archive version 0.n.0)</li><li class="li1">Baylor: ?</li><li class="li1">DCC: May increment after any auto-processing (e.g. converting from v2.2 to v2.3)</li></ul></li></ul></div>
+</div>
+<h4 id="MAFDashboard-IfyouareattheBroadthebelowfilesareavailableonourlocalmirror xchipgdacdatadccmirror3dccsite-simplyreplace httpswiththatpath">If you are at the Broad, the below files are available on our local mirror: /xchip/gdac_data/dcc_mirror3/dcc_site/ - simply replace https:// with that path</h4><h4 id="MAFDashboard-MAFsAvailablefromtheDCCasof02September2015DCCMAFs"><span style="font-size: 18.0pt;">MAFs Available from the DCC as of 02 September 2015</span><style type="text/css">
+
+tr:nth-child(even) {
+	background-color: lightblue;
+}
+table.confluenceTable th.confluenceTh, table.confluenceTable td.confluenceTd {
+	vertical-align: middle;
+	text-align: center;
+}
+
+</style>
+
+<table class="confluenceTable">
+<tr>
+<th class="confluenceTh">
+<p>Tumor Type</p></th>
+<th class="confluenceTh">
+<p>Center</p></th>
+<th class="confluenceTh">
+<p>Tumor Samples</p></th>
+<th class="confluenceTh">
+<p>Normal Samples</p></th>
+<th class="confluenceTh">
+<p>Mutations</p></th>
+<th class="confluenceTh">
+<p>Columns</p></th>
+<th class="confluenceTh">
+<p>Archive Version</p></th>
+<th class="confluenceTh">
+<p>File Name</p></th>
+<th class="confluenceTh">
+<p>Size</p></th>
+<th class="confluenceTh">
+<p>Last Modified</p></th>
+<th class="confluenceTh">
+<p>md5sum</p></th></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>ACC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>13129</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_ACC.IlluminaGA_DNASeq_curated.Level_2.1.0.0/An_TCGA_ACC_External_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">An_TCGA_ACC_External_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>12.1MB</p></td>
+<td class="confluenceTd">
+<p>03 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>8960de8eaddf25b8256a23a4c7cd761f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>20166</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_ACC.Mixed_DNASeq_curated.Level_2.1.1.0/hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.7MB</p></td>
+<td class="confluenceTd">
+<p>29 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>0851ed2831c86203b61dfd0f77d30737</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>8225</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/hgsc.bcm.edu/illuminaga_dnaseq_curated/mutations/hgsc.bcm.edu_ACC.IlluminaGA_DNASeq_curated.Level_2.1.0.0/hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.0MB</p></td>
+<td class="confluenceTd">
+<p>05 Dec 2013</p></td>
+<td class="confluenceTd">
+<p>2af7f17e683f4b2b35b5dcc45d13104f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>25793</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/acc/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_ACC.IlluminaGA_DNASeq_automated.Level_2.1.2.0/hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_ACC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>9.4MB</p></td>
+<td class="confluenceTd">
+<p>14 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>3427ada0f81dc5044aefd3e0fa0e7d50</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>BLCA</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>405</p></td>
+<td class="confluenceTd">
+<p>404</p></td>
+<td class="confluenceTd">
+<p>132412</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/blca/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_BLCA.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_BLCA.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_BLCA.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>35.9MB</p></td>
+<td class="confluenceTd">
+<p>23 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>21ad0a0738ae849c587abdf0c7704e99</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>130</p></td>
+<td class="confluenceTd">
+<p>130</p></td>
+<td class="confluenceTd">
+<p>39312</p></td>
+<td class="confluenceTd">
+<p>95</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/blca/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_BLCA.IlluminaGA_DNASeq_curated.Level_2.1.4.0/BLCA130_somatic_updated.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">BLCA130_somatic_updated.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>34.8MB</p></td>
+<td class="confluenceTd">
+<p>21 Apr 2014</p></td>
+<td class="confluenceTd">
+<p>3c4584f577916f340e6c562d4a708a7e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>159</p></td>
+<td class="confluenceTd">
+<p>167</p></td>
+<td class="confluenceTd">
+<p>51295</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/blca/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_BLCA.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_BLCA_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_BLCA_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>51.4MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>d3eb70b940fbec38a934bb6d41a1fb95</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>28</p></td>
+<td class="confluenceTd">
+<p>28</p></td>
+<td class="confluenceTd">
+<p>7557</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/blca/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_BLCA.IlluminaGA_DNASeq.Level_2.1.3.0/BLCA-28-original.aggregated.tcga.somatic.maf" class="external-link" rel="nofollow">BLCA-28-original.aggregated.tcga.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>6.5MB</p></td>
+<td class="confluenceTd">
+<p>09 Jan 2013</p></td>
+<td class="confluenceTd">
+<p>816f494b9caf23b944249651a7d2cded</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>396</p></td>
+<td class="confluenceTd">
+<p>411</p></td>
+<td class="confluenceTd">
+<p>138723</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/blca/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_BLCA.IlluminaGA_DNASeq_automated.Level_2.1.5.0/PR_TCGA_BLCA_PAIR_Capture_All_Pairs_QCPASS_v6.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_BLCA_PAIR_Capture_All_Pairs_QCPASS_v6.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>133.3MB</p></td>
+<td class="confluenceTd">
+<p>31 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>05d8985686dd2f6cde0c9bfdb31a9265</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>BRCA</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>107</p></td>
+<td class="confluenceTd">
+<p>109</p></td>
+<td class="confluenceTd">
+<p>7746</p></td>
+<td class="confluenceTd">
+<p>54</p></td>
+<td class="confluenceTd">
+<p>2.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/brca/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.2.1.0/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.2.0.0.maf" class="external-link" rel="nofollow">genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.2.0.0.maf</a></p></td>
+<td class="confluenceTd">
+<p>4.0MB</p></td>
+<td class="confluenceTd">
+<p>09 Oct 2012</p></td>
+<td class="confluenceTd">
+<p>1d662b8319e3a2672db293b15252ed4f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>510</p></td>
+<td class="confluenceTd">
+<p>546</p></td>
+<td class="confluenceTd">
+<p>33963</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>3.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/brca/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.3.3.0/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.3.2.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.3.2.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>17.8MB</p></td>
+<td class="confluenceTd">
+<p>11 Oct 2012</p></td>
+<td class="confluenceTd">
+<p>dbc316c2f817dfc4284df434a5d152c8</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>776</p></td>
+<td class="confluenceTd">
+<p>801</p></td>
+<td class="confluenceTd">
+<p>47243</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>5.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/brca/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.5.3.0/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.5.3.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.5.3.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>24.6MB</p></td>
+<td class="confluenceTd">
+<p>24 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>5d6283c8e28f9c1e2ddaa55f4b773b88</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>993</p></td>
+<td class="confluenceTd">
+<p>1032</p></td>
+<td class="confluenceTd">
+<p>90490</p></td>
+<td class="confluenceTd">
+<p>67</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/brca/gsc/genome.wustl.edu/illuminaga_dnaseq_curated/mutations/genome.wustl.edu_BRCA.IlluminaGA_DNASeq_curated.Level_2.1.1.0/genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.1.1.0.curated.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_BRCA.IlluminaGA_DNASeq.Level_2.1.1.0.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>52.0MB</p></td>
+<td class="confluenceTd">
+<p>06 Feb 2014</p></td>
+<td class="confluenceTd">
+<p>f823427c6ea3d520fb72379da8ba63dd</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>CESC</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>199</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>68621</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_CESC.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_CESC.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_CESC.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>19.2MB</p></td>
+<td class="confluenceTd">
+<p>25 Jun 2014</p></td>
+<td class="confluenceTd">
+<p>c25bb0dbd47aead8aca1f70aa371cde0</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>39</p></td>
+<td class="confluenceTd">
+<p>10020</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_CESC.IlluminaGA_DNASeq.Level_2.1.4.0/PR_TCGA_CESC_PAIR_Capture_All_Pairs.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_CESC_PAIR_Capture_All_Pairs.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.1MB</p></td>
+<td class="confluenceTd">
+<p>12 Nov 2012</p></td>
+<td class="confluenceTd">
+<p>1b13e812e746b9149b15090b48d2de1e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>40</p></td>
+<td class="confluenceTd">
+<p>40</p></td>
+<td class="confluenceTd">
+<p>11599</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_CESC.IlluminaGA_DNASeq.Level_2.0.5.0/PR_TCGA_CESC_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_CESC_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>11.1MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>522bd0522b1ee4df5f1f1e2871d4fe9b</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>40</p></td>
+<td class="confluenceTd">
+<p>40</p></td>
+<td class="confluenceTd">
+<p>11835</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.6.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_CESC.IlluminaGA_DNASeq_automated.Level_2.1.6.0/PR_TCGA_CESC_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_CESC_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.9MB</p></td>
+<td class="confluenceTd">
+<p>22 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>13219ca8faa4aaf3568576ac30c563ea</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>46547</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/genome.wustl.edu/illuminaga_dnaseq_curated/mutations/genome.wustl.edu_CESC.IlluminaGA_DNASeq_curated.Level_2.1.0.0/genome.wustl.edu_CESC.IlluminaGA_DNASeq_curated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_CESC.IlluminaGA_DNASeq_curated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>25.6MB</p></td>
+<td class="confluenceTd">
+<p>19 Aug 2014</p></td>
+<td class="confluenceTd">
+<p>be5c5f59f91299f851a3e10eecce57d3</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>199</p></td>
+<td class="confluenceTd">
+<p>201</p></td>
+<td class="confluenceTd">
+<p>39864</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/cesc/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_CESC.IlluminaGA_DNASeq_automated.Level_2.1.1.0/ucsc.edu_CESC.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_CESC.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>14.1MB</p></td>
+<td class="confluenceTd">
+<p>05 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>c03c6cbdd3b4debf8523cad737e678c6</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>CHOL</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>3555</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/chol/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_CHOL.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_CHOL.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_CHOL.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>988.4KB</p></td>
+<td class="confluenceTd">
+<p>10 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>47268aa46006c53013466f740a3e1462</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>4389</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/chol/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0/CHOL_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">CHOL_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.9MB</p></td>
+<td class="confluenceTd">
+<p>19 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>0aa2864fc08b6a12a164b77d49765e59</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>6755</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/chol/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_CHOL.Mixed_DNASeq_curated.Level_2.1.0.0/hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.4MB</p></td>
+<td class="confluenceTd">
+<p>20 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>8db4269d8aba6d8d397e2761e24e8e6e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>5359</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/chol/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_CHOL.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.0MB</p></td>
+<td class="confluenceTd">
+<p>24 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>ee6d4a3810593268b8038dfb13999ddd</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>2631</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/chol/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_CHOL.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>767.0KB</p></td>
+<td class="confluenceTd">
+<p>23 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>b44be3f2e6a994be766cc881a3143b2b</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>COAD</p></th>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>220</p></td>
+<td class="confluenceTd">
+<p>221</p></td>
+<td class="confluenceTd">
+<p>114594</p></td>
+<td class="confluenceTd">
+<p>47</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/coad/gsc/hgsc.bcm.edu/illuminaga_dnaseq/mutations/hgsc.bcm.edu_COAD.IlluminaGA_DNASeq.Level_2.1.5.0/hgsc.bcm.edu_COAD.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_COAD.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>40.9MB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>f29ee46da98b52ef822ac9bfac6df7bc</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>53</p></td>
+<td class="confluenceTd">
+<p>10928</p></td>
+<td class="confluenceTd">
+<p>41</p></td>
+<td class="confluenceTd">
+<p>1.7.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/coad/gsc/hgsc.bcm.edu/solid_dnaseq/mutations/hgsc.bcm.edu_COAD.SOLiD_DNASeq.Level_2.1.7.0/hgsc.bcm.edu_COAD.SOLiD_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_COAD.SOLiD_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.3MB</p></td>
+<td class="confluenceTd">
+<p>30 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>01b6e9bae3a81836ffb039be8ca4ae2b</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>DLBC</p></th>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>76860</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/dlbc/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_DLBC.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_DLBC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_DLBC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>33.9MB</p></td>
+<td class="confluenceTd">
+<p>11 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>9e4e7a1b2c19ff80f2c47e39ea721250</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>ESCA</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>45877</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/esca/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_ESCA.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_ESCA.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_ESCA.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>12.7MB</p></td>
+<td class="confluenceTd">
+<p>25 Nov 2014</p></td>
+<td class="confluenceTd">
+<p>52bdf5e059c4873edfc70b96d2318373</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>189</p></td>
+<td class="confluenceTd">
+<p>42374</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/esca/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_ESCA.IlluminaGA_DNASeq_automated.Level_2.1.0.0/An_TCGA_ESCA_External_capture_All_Pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">An_TCGA_ESCA_External_capture_All_Pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>39.1MB</p></td>
+<td class="confluenceTd">
+<p>05 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>1f3d13d650025279156e35e472c7e4a9</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>54042</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/esca/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_ESCA.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_ESCA.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_ESCA.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>19.6MB</p></td>
+<td class="confluenceTd">
+<p>09 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>dfef4bf7b748b4877c36fd911577b793</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>189</p></td>
+<td class="confluenceTd">
+<p>28720</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/esca/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_ESCA.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_ESCA.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_ESCA.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.2MB</p></td>
+<td class="confluenceTd">
+<p>03 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>2af1a48c657f2c24edf92095ef706e7b</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="1">
+<p>FPPP</p></th>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>89</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>60447</p></td>
+<td class="confluenceTd">
+<p>95</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/fppp/gsc/hgsc.bcm.edu/mixed_dnaseq_automated/mutations/hgsc.bcm.edu_FPPP.Mixed_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_FPPP.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_FPPP.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>50.6MB</p></td>
+<td class="confluenceTd">
+<p>13 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>bf10359af08853b78d6b9c3d58b6d850</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="3">
+<p>GBM</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>22166</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/gbm/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_GBM.IlluminaGA_DNASeq.Level_2.1.1.0/gbm_liftover.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">gbm_liftover.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>19.2MB</p></td>
+<td class="confluenceTd">
+<p>27 Feb 2013</p></td>
+<td class="confluenceTd">
+<p>1ee5e9b937ef29b1b3ccc0f6b454f886</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>291</p></td>
+<td class="confluenceTd">
+<p>22166</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>100.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/gbm/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_GBM.IlluminaGA_DNASeq.Level_2.100.1.0/step4_gbm_liftover.aggregated.capture.tcga.uuid.maf2.4.migrated.somatic.maf" class="external-link" rel="nofollow">step4_gbm_liftover.aggregated.capture.tcga.uuid.maf2.4.migrated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>22.3MB</p></td>
+<td class="confluenceTd">
+<p>27 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>3de36db3e402eaa855c346d0ec5f7b6e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>315</p></td>
+<td class="confluenceTd">
+<p>315</p></td>
+<td class="confluenceTd">
+<p>25131</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/gbm/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_GBM.IlluminaGA_DNASeq_automated.Level_2.1.1.0/ucsc.edu_GBM.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_GBM.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.9MB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2015</p></td>
+<td class="confluenceTd">
+<p>48d92130577efbefe6f5b39ec368dd00</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>HNSC</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>512</p></td>
+<td class="confluenceTd">
+<p>510</p></td>
+<td class="confluenceTd">
+<p>109257</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/hnsc/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_HNSC.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_HNSC.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_HNSC.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>29.7MB</p></td>
+<td class="confluenceTd">
+<p>13 Apr 2015</p></td>
+<td class="confluenceTd">
+<p>21d7f9b93ae750a7b08acf9579c8b744</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>279</p></td>
+<td class="confluenceTd">
+<p>279</p></td>
+<td class="confluenceTd">
+<p>51799</p></td>
+<td class="confluenceTd">
+<p>89</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/hnsc/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_HNSC.IlluminaGA_DNASeq_curated.Level_2.1.5.0/pair_set_279_freeze_Mar262013.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">pair_set_279_freeze_Mar262013.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>46.2MB</p></td>
+<td class="confluenceTd">
+<p>09 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>2f88489506d6a2c68cace24046e30bd1</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>306</p></td>
+<td class="confluenceTd">
+<p>364</p></td>
+<td class="confluenceTd">
+<p>74008</p></td>
+<td class="confluenceTd">
+<p>89</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/hnsc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_HNSC.IlluminaGA_DNASeq.Level_2.1.0.0/PR_TCGA_HNSC_PAIR_Capture_TP-NT_TP-NB.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_HNSC_PAIR_Capture_TP-NT_TP-NB.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>61.7MB</p></td>
+<td class="confluenceTd">
+<p>12 Oct 2012</p></td>
+<td class="confluenceTd">
+<p>90c3511c08006f651117e369e5a3c243</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>319</p></td>
+<td class="confluenceTd">
+<p>378</p></td>
+<td class="confluenceTd">
+<p>73766</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/hnsc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_HNSC.IlluminaGA_DNASeq.Level_2.0.2.0/PR_TCGA_HNSC_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_HNSC_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>63.6MB</p></td>
+<td class="confluenceTd">
+<p>27 Mar 2013</p></td>
+<td class="confluenceTd">
+<p>7ae6bcc40efa81b40c355b2e70add124</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>509</p></td>
+<td class="confluenceTd">
+<p>567</p></td>
+<td class="confluenceTd">
+<p>120520</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/hnsc/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_HNSC.IlluminaGA_DNASeq_automated.Level_2.1.4.0/PR_TCGA_HNSC_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_HNSC_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>116.2MB</p></td>
+<td class="confluenceTd">
+<p>26 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>f84d00b8905b900143125f10c587a11a</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>KICH</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>3596</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_KICH.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_KICH.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_KICH.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.0MB</p></td>
+<td class="confluenceTd">
+<p>04 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>23b65ca8fb46dcdab06faf62e37cb11f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>3835</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_KICH.IlluminaGA_DNASeq.Level_2.1.0.0/BCM-KICH-TCGA.broad_calls.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">BCM-KICH-TCGA.broad_calls.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.8MB</p></td>
+<td class="confluenceTd">
+<p>03 Sep 2013</p></td>
+<td class="confluenceTd">
+<p>5c5cb0f9e0b65f045892ce02d514eca0</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>76</p></td>
+<td class="confluenceTd">
+<p>40</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_KICH.Mixed_DNASeq_curated.Level_2.1.1.0/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.mitochondria.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.mitochondria.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>31.7KB</p></td>
+<td class="confluenceTd">
+<p>07 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>55bcc036869792204352b9be3ace07d8</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>65</p></td>
+<td class="confluenceTd">
+<p>65</p></td>
+<td class="confluenceTd">
+<p>1788</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/hgsc.bcm.edu/illuminaga_dnaseq/mutations/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.Level_2.1.2.0/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>657.8KB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>5e2bd17e7e52ecbc1c900328009287a0</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>3675</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq_automated.Level_2.1.3.0/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.4MB</p></td>
+<td class="confluenceTd">
+<p>11 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>8d5776ebdd859855ed5123edd7a8f5ba</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>66</p></td>
+<td class="confluenceTd">
+<p>7559</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kich/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_KICH.Mixed_DNASeq_curated.Level_2.1.1.0/hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KICH.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.7MB</p></td>
+<td class="confluenceTd">
+<p>07 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>aeb06b199e6269e5acd8252516c20c12</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>KIRC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>235</p></td>
+<td class="confluenceTd">
+<p>235</p></td>
+<td class="confluenceTd">
+<p>38810</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirc/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_KIRC.IlluminaGA_DNASeq_automated.Level_2.1.5.0/PR_TCGA_KIRC_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_KIRC_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>36.9MB</p></td>
+<td class="confluenceTd">
+<p>15 Apr 2014</p></td>
+<td class="confluenceTd">
+<p>d0f4703a282f6ea41fcdfef355ba12aa</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>238</p></td>
+<td class="confluenceTd">
+<p>236</p></td>
+<td class="confluenceTd">
+<p>37082</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_KIRC.IlluminaGA_DNASeq.Level_2.0.4.0/PR_TCGA_KIRC_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_KIRC_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>37.0MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>64172ca8fc9863e46a266f34cdba3aeb</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>297</p></td>
+<td class="confluenceTd">
+<p>297</p></td>
+<td class="confluenceTd">
+<p>26265</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_KIRC.IlluminaGA_DNASeq.Level_2.1.5.0/BI_and_BCM_1.4.aggregated.tcga.somatic.maf" class="external-link" rel="nofollow">BI_and_BCM_1.4.aggregated.tcga.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>22.0MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>1c0e0542c7c7ff010496982104370101</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>491</p></td>
+<td class="confluenceTd">
+<p>490</p></td>
+<td class="confluenceTd">
+<p>28827</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirc/gsc/hgsc.bcm.edu/mixed_dnaseq/mutations/hgsc.bcm.edu_KIRC.Mixed_DNASeq.Level_2.1.2.0/hgsc.bcm.edu_KIRC.Mixed_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KIRC.Mixed_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.2MB</p></td>
+<td class="confluenceTd">
+<p>08 Nov 2013</p></td>
+<td class="confluenceTd">
+<p>59a2c6e62d405f2ec7115f87b71bbd34</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>KIRP</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>115</p></td>
+<td class="confluenceTd">
+<p>125</p></td>
+<td class="confluenceTd">
+<p>10029</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_KIRP.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_KIRP_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_KIRP_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>9.9MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>eeaedd03fcd15abecd3fb3347742ef4b</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>116</p></td>
+<td class="confluenceTd">
+<p>126</p></td>
+<td class="confluenceTd">
+<p>10791</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_KIRP.IlluminaGA_DNASeq_automated.Level_2.1.4.0/PR_TCGA_KIRP_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_KIRP_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.1MB</p></td>
+<td class="confluenceTd">
+<p>26 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>50c2ed1b01a086b00715ba11ebcfadeb</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>171</p></td>
+<td class="confluenceTd">
+<p>190</p></td>
+<td class="confluenceTd">
+<p>16951</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_KIRP.IlluminaGA_DNASeq_curated.Level_2.1.1.0/An_TCGA_KIRP_MultiCenterCalling_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">An_TCGA_KIRP_MultiCenterCalling_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>16.5MB</p></td>
+<td class="confluenceTd">
+<p>10 Feb 2014</p></td>
+<td class="confluenceTd">
+<p>7a7e7afd58a81fb2d9c074aed5e30835</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>161</p></td>
+<td class="confluenceTd">
+<p>15585</p></td>
+<td class="confluenceTd">
+<p>52</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_KIRP.Mixed_DNASeq_curated.Level_2.1.3.0/hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.8MB</p></td>
+<td class="confluenceTd">
+<p>02 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>3ddcaf0557a6fb8b8e553a950991b263</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>168</p></td>
+<td class="confluenceTd">
+<p>168</p></td>
+<td class="confluenceTd">
+<p>13029</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/hgsc.bcm.edu/illuminaga_dnaseq_curated/mutations/hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq_curated.Level_2.1.0.0/hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_KIRP.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>4.7MB</p></td>
+<td class="confluenceTd">
+<p>24 Feb 2014</p></td>
+<td class="confluenceTd">
+<p>f7623df4ce815e6f1142cfdbc300edb4</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>171</p></td>
+<td class="confluenceTd">
+<p>190</p></td>
+<td class="confluenceTd">
+<p>22926</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/kirp/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_KIRP.IlluminaGA_DNASeq_automated.Level_2.1.2.0/ucsc.edu_KIRP.IlluminaGA_DNASeq_automated.Level_2.1.2.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_KIRP.IlluminaGA_DNASeq_automated.Level_2.1.2.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.0MB</p></td>
+<td class="confluenceTd">
+<p>09 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>a88696ee08dd89281e2ec9e87e58e262</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>LAML</p></th>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>124</p></td>
+<td class="confluenceTd">
+<p>124</p></td>
+<td class="confluenceTd">
+<p>2738</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/laml/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_LAML.IlluminaGA_DNASeq.Level_2.1.2.0/genome.wustl.edu_LAML.IlluminaGA_DNASeq.preliminary.1.maf" class="external-link" rel="nofollow">genome.wustl.edu_LAML.IlluminaGA_DNASeq.preliminary.1.maf</a></p></td>
+<td class="confluenceTd">
+<p>765.0KB</p></td>
+<td class="confluenceTd">
+<p>24 Oct 2012</p></td>
+<td class="confluenceTd">
+<p>3ea2dc27ec8a154827869caf8e53d9a6</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>197</p></td>
+<td class="confluenceTd">
+<p>197</p></td>
+<td class="confluenceTd">
+<p>2585</p></td>
+<td class="confluenceTd">
+<p>64</p></td>
+<td class="confluenceTd">
+<p>2.16.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/laml/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_LAML.IlluminaGA_DNASeq.Level_2.2.16.0/genome.wustl.edu_LAML.IlluminaGA_DNASeq.Level_2.2.13.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_LAML.IlluminaGA_DNASeq.Level_2.2.13.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.5MB</p></td>
+<td class="confluenceTd">
+<p>02 Dec 2013</p></td>
+<td class="confluenceTd">
+<p>ab6c720a25fbf438a78133a0011469ec</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>LGG</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>129</p></td>
+<td class="confluenceTd">
+<p>1</p></td>
+<td class="confluenceTd">
+<p>130</p></td>
+<td class="confluenceTd">
+<p>36</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_LGG.IlluminaGA_DNASeq_curated.Level_2.1.4.0/TERT_targeted_sequencing-10-8-2014.DCC.uuid_barcode_fix.maf.tert" class="external-link" rel="nofollow">TERT_targeted_sequencing-10-8-2014.DCC.uuid_barcode_fix.maf.tert</a></p></td>
+<td class="confluenceTd">
+<p>31.6KB</p></td>
+<td class="confluenceTd">
+<p>05 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>5cbb00ccc01b3affcf7f4006d04946b4</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>220</p></td>
+<td class="confluenceTd">
+<p>220</p></td>
+<td class="confluenceTd">
+<p>27315</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_LGG.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_LGG_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_LGG_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>27.8MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>24efbeb5137d634e7876be19b470c242</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>286</p></td>
+<td class="confluenceTd">
+<p>286</p></td>
+<td class="confluenceTd">
+<p>9885</p></td>
+<td class="confluenceTd">
+<p>38</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_LGG.IlluminaGA_DNASeq_curated.Level_2.1.4.0/LGG_FINAL_ANALYSIS.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">LGG_FINAL_ANALYSIS.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.0MB</p></td>
+<td class="confluenceTd">
+<p>05 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>23e38e6dfb40f25fe8e6d5233dade590</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>530</p></td>
+<td class="confluenceTd">
+<p>513</p></td>
+<td class="confluenceTd">
+<p>49197</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_LGG.IlluminaGA_DNASeq_automated.Level_2.1.5.0/PR_TCGA_LGG_PAIR_Capture_All_Pairs_QCPASS_v7.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_LGG_PAIR_Capture_All_Pairs_QCPASS_v7.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>48.1MB</p></td>
+<td class="confluenceTd">
+<p>15 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>337f09e49d2b454214461b07d844369f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>9751</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_LGG.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_LGG.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_LGG.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.5MB</p></td>
+<td class="confluenceTd">
+<p>10 Dec 2013</p></td>
+<td class="confluenceTd">
+<p>71d9b28366b1dd5eab869b8ddcae8a49</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>516</p></td>
+<td class="confluenceTd">
+<p>516</p></td>
+<td class="confluenceTd">
+<p>27721</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lgg/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_LGG.IlluminaGA_DNASeq_automated.Level_2.1.4.0/ucsc.edu_LGG.IlluminaGA_DNASeq_automated.Level_2.1.4.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_LGG.IlluminaGA_DNASeq_automated.Level_2.1.4.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>9.7MB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2015</p></td>
+<td class="confluenceTd">
+<p>a16741f8ba0aec7f46bda4b7db810e14</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>LIHC</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>202</p></td>
+<td class="confluenceTd">
+<p>202</p></td>
+<td class="confluenceTd">
+<p>72862</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_LIHC.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_LIHC.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_LIHC.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>20.3MB</p></td>
+<td class="confluenceTd">
+<p>09 May 2014</p></td>
+<td class="confluenceTd">
+<p>869a433c3927e1bc6d1d80ed257f976e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>202</p></td>
+<td class="confluenceTd">
+<p>236</p></td>
+<td class="confluenceTd">
+<p>1432588</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_LIHC.IlluminaGA_DNASeq_automated.Level_2.1.0.0/An_TCGA_LIHC_External_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">An_TCGA_LIHC_External_capture_All_Pairs.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.3GB</p></td>
+<td class="confluenceTd">
+<p>18 May 2014</p></td>
+<td class="confluenceTd">
+<p>3c5bfcb3a64cec9aa2bc85266c09583f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>27892</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_LIHC.Mixed_DNASeq_curated.Level_2.1.2.0/hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.8MB</p></td>
+<td class="confluenceTd">
+<p>09 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>b8d47374da88802fb8d1bd904d88df8f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>198</p></td>
+<td class="confluenceTd">
+<p>31595</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq_automated.Level_2.1.1.0/hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>11.5MB</p></td>
+<td class="confluenceTd">
+<p>10 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>f80add637bd32aa22ef5d00c8f90c7e6</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>4</p></td>
+<td class="confluenceTd">
+<p>4</p></td>
+<td class="confluenceTd">
+<p>974</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>2.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_LIHC.Mixed_DNASeq_curated.Level_2.2.0.0/hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_LIHC.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>355.4KB</p></td>
+<td class="confluenceTd">
+<p>19 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>e74d27feb4739215e51e47a394575b67</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>202</p></td>
+<td class="confluenceTd">
+<p>236</p></td>
+<td class="confluenceTd">
+<p>25888</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lihc/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_LIHC.IlluminaGA_DNASeq_automated.Level_2.1.1.0/ucsc.edu_LIHC.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_LIHC.IlluminaGA_DNASeq_automated.Level_2.1.1.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>9.4MB</p></td>
+<td class="confluenceTd">
+<p>09 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>ab0b00c6cd81f333250e27c6f88e3ca8</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="3">
+<p>LUAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>230</p></td>
+<td class="confluenceTd">
+<p>230</p></td>
+<td class="confluenceTd">
+<p>72541</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>1.6.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/luad/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_LUAD.IlluminaGA_DNASeq_curated.Level_2.1.6.0/AN_TCGA_LUAD_PAIR_capture_freeze_FINAL_230.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">AN_TCGA_LUAD_PAIR_capture_freeze_FINAL_230.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>64.6MB</p></td>
+<td class="confluenceTd">
+<p>25 Nov 2014</p></td>
+<td class="confluenceTd">
+<p>82873d928fd40677e8ef0de26ae8c63c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>538</p></td>
+<td class="confluenceTd">
+<p>583</p></td>
+<td class="confluenceTd">
+<p>234278</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/luad/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_LUAD.IlluminaGA_DNASeq.Level_2.0.4.0/PR_TCGA_LUAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_LUAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>232.8MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>fd7a7ba47df205795946a501c11208cb</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>561</p></td>
+<td class="confluenceTd">
+<p>606</p></td>
+<td class="confluenceTd">
+<p>255972</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/luad/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_LUAD.IlluminaGA_DNASeq_automated.Level_2.1.5.0/PR_TCGA_LUAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_LUAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>241.5MB</p></td>
+<td class="confluenceTd">
+<p>22 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>ced241ccb33157ca7e6467c880f31396</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="3">
+<p>LUSC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>65305</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>100.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lusc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_LUSC.IlluminaGA_DNASeq.Level_2.100.1.0/step4_LUSC_Paper_v8.aggregated.tcga.maf2.4.migrated.somatic.maf" class="external-link" rel="nofollow">step4_LUSC_Paper_v8.aggregated.tcga.maf2.4.migrated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>64.0MB</p></td>
+<td class="confluenceTd">
+<p>27 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>1a49acfb045eb3e56be19e6a97e587dc</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>65305</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lusc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_LUSC.IlluminaGA_DNASeq.Level_2.1.5.0/LUSC_Paper_v8.aggregated.tcga.somatic.maf" class="external-link" rel="nofollow">LUSC_Paper_v8.aggregated.tcga.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>55.4MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>a77f0045ee8341c4fd852a8ce0d0ab09</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>178</p></td>
+<td class="confluenceTd">
+<p>67074</p></td>
+<td class="confluenceTd">
+<p>98</p></td>
+<td class="confluenceTd">
+<p>0.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/lusc/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_LUSC.IlluminaGA_DNASeq.Level_2.0.0.0/LUSC_Paper_v8.final_analysis_set.12_13_11.CpG_Filtered.cleaned.maf" class="external-link" rel="nofollow">LUSC_Paper_v8.final_analysis_set.12_13_11.CpG_Filtered.cleaned.maf</a></p></td>
+<td class="confluenceTd">
+<p>56.1MB</p></td>
+<td class="confluenceTd">
+<p>20 Jan 2012</p></td>
+<td class="confluenceTd">
+<p>599966524e4195d17ba3d1b47be5bb81</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>MESO</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>8577</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/meso/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_MESO.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_MESO.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_MESO.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.4MB</p></td>
+<td class="confluenceTd">
+<p>12 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>4406983e06278573c8cdd4d509f55e0a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>sanger.ac.uk</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>4235</p></td>
+<td class="confluenceTd">
+<p>51</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/meso/gsc/sanger.ac.uk/illuminahiseq_dnaseq/mutations/sanger.ac.uk_MESO.IlluminaHiSeq_DNASeq.Level_2.1.0.0/sanger.ac.uk_MESO.IlluminaHiSeq_DNASeq.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">sanger.ac.uk_MESO.IlluminaHiSeq_DNASeq.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.7MB</p></td>
+<td class="confluenceTd">
+<p>28 Aug 2015</p></td>
+<td class="confluenceTd">
+<p>d3d8d83409b2faa01fab1a98829fbea1</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="7">
+<p>OV</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>6308</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>7.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.7.3.0/broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.7.somatic.maf" class="external-link" rel="nofollow">broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.7.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.8MB</p></td>
+<td class="confluenceTd">
+<p>05 Nov 2012</p></td>
+<td class="confluenceTd">
+<p>0d71eaab5be42d3ee79722617dea9529</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>6308</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.1.2.0/ov_liftover.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">ov_liftover.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>6.0MB</p></td>
+<td class="confluenceTd">
+<p>21 Mar 2013</p></td>
+<td class="confluenceTd">
+<p>663009aa8e2430572e8989fd3ee52bd8</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>6308</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>100.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_OV.IlluminaGA_DNASeq.Level_2.100.1.0/step4_ov_liftover.aggregated.capture.tcga.uuid.maf2.4.migrated.somatic.maf" class="external-link" rel="nofollow">step4_ov_liftover.aggregated.capture.tcga.uuid.maf2.4.migrated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>6.8MB</p></td>
+<td class="confluenceTd">
+<p>27 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>5812b6ea88c8005e85cfbf747581f71f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>142</p></td>
+<td class="confluenceTd">
+<p>11342</p></td>
+<td class="confluenceTd">
+<p>54</p></td>
+<td class="confluenceTd">
+<p>2.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_OV.IlluminaGA_DNASeq.Level_2.2.1.0/genome.wustl.edu_OV.IlluminaGA_DNASeq.Level_2.2.0.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_OV.IlluminaGA_DNASeq.Level_2.2.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.8MB</p></td>
+<td class="confluenceTd">
+<p>09 Oct 2012</p></td>
+<td class="confluenceTd">
+<p>0c631c534ece85903f8fe198bde9a26f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>88</p></td>
+<td class="confluenceTd">
+<p>88</p></td>
+<td class="confluenceTd">
+<p>6442</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_OV.IlluminaGA_DNASeq.Level_2.1.3.0/genome.wustl.edu_OV.IlluminaGA_DNASeq.1.3.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_OV.IlluminaGA_DNASeq.1.3.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.9MB</p></td>
+<td class="confluenceTd">
+<p>24 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>11f71bc7c6fe568913b5a140a1793070</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>3557</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.6.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/hgsc.bcm.edu/solid_dnaseq/mutations/hgsc.bcm.edu_OV.SOLiD_DNASeq.Level_2.1.6.0/hgsc.bcm.edu_OV.SOLiD_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_OV.SOLiD_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>984.4KB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>00a15bd07a74273b6079e31c33e8674a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>3557</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.7.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ov/gsc/hgsc.bcm.edu/solid_dnaseq_curated/mutations/hgsc.bcm.edu_OV.SOLiD_DNASeq_curated.Level_2.1.7.0/hgsc.bcm.edu_OV.SOLiD_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_OV.SOLiD_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>984.4KB</p></td>
+<td class="confluenceTd">
+<p>28 Jul 2014</p></td>
+<td class="confluenceTd">
+<p>4feca0fb9fb9dddbcd04d76f6ee886c5</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="6">
+<p>PAAD</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>147</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>35269</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_PAAD.IlluminaHiSeq_DNASeq_automated.Level_2.1.1.0/bcgsc.ca_PAAD.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_PAAD.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>9.6MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>3ca7b56889b6d993e4866c6c994777fb</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>37705</p></td>
+<td class="confluenceTd">
+<p>84</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_PAAD.IlluminaGA_DNASeq_curated.Level_2.1.3.0/freeze2.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">freeze2.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>37.8MB</p></td>
+<td class="confluenceTd">
+<p>06 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>97bdfba4b10d79efb91a54f135fec749</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>147</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>56815</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.9.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_PAAD.IlluminaGA_DNASeq_automated.Level_2.1.9.0/PAAD_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PAAD_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>53.1MB</p></td>
+<td class="confluenceTd">
+<p>23 Jun 2015</p></td>
+<td class="confluenceTd">
+<p>cc276439128d4c75b26fbd12b852b842</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>59</p></td>
+<td class="confluenceTd">
+<p>27745</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_PAAD.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_PAAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_PAAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>27.5MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>4eebfbb373ab492fd0ebe2f77e1c1b31</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>147</p></td>
+<td class="confluenceTd">
+<p>146</p></td>
+<td class="confluenceTd">
+<p>28420</p></td>
+<td class="confluenceTd">
+<p>55</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_PAAD.IlluminaGA_DNASeq_automated.Level_2.1.1.0/hgsc.bcm.edu_PAAD.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_PAAD.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.9MB</p></td>
+<td class="confluenceTd">
+<p>27 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>1b2cf21bb389a1f0c6baa30c611c41cc</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>172</p></td>
+<td class="confluenceTd">
+<p>177</p></td>
+<td class="confluenceTd">
+<p>20659</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/paad/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_PAAD.IlluminaGA_DNASeq_automated.Level_2.1.2.0/ucsc.edu_PAAD.IlluminaGA_DNASeq_automated.Level_2.1.2.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_PAAD.IlluminaGA_DNASeq_automated.Level_2.1.2.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.3MB</p></td>
+<td class="confluenceTd">
+<p>31 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>a196b27aa2160903f768b4450f36b00b</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>PCPG</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>179</p></td>
+<td class="confluenceTd">
+<p>2753</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/pcpg/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_PCPG.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_PCPG.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_PCPG.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>767.1KB</p></td>
+<td class="confluenceTd">
+<p>18 Jul 2014</p></td>
+<td class="confluenceTd">
+<p>2262ca05f5923381bef0169b62f9b98a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>183</p></td>
+<td class="confluenceTd">
+<p>181</p></td>
+<td class="confluenceTd">
+<p>4602</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/pcpg/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_PCPG.IlluminaGA_DNASeq_automated.Level_2.1.2.0/PR_TCGA_PCPG_PAIR_Capture_All_Pairs_QCPASS_v1.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_PCPG_PAIR_Capture_All_Pairs_QCPASS_v1.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>4.0MB</p></td>
+<td class="confluenceTd">
+<p>12 Sep 2014</p></td>
+<td class="confluenceTd">
+<p>28a26779708de17e55ce13fdf9a29e9f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>182</p></td>
+<td class="confluenceTd">
+<p>4369</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/pcpg/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_PCPG.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_PCPG.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_PCPG.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.7MB</p></td>
+<td class="confluenceTd">
+<p>23 Jul 2014</p></td>
+<td class="confluenceTd">
+<p>789cf45d8ca230b8cb7d3467c940399a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>184</p></td>
+<td class="confluenceTd">
+<p>182</p></td>
+<td class="confluenceTd">
+<p>2516</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/pcpg/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_PCPG.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_PCPG.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_PCPG.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>677.9KB</p></td>
+<td class="confluenceTd">
+<p>25 Jul 2014</p></td>
+<td class="confluenceTd">
+<p>723258533b4b45d3008b1dfc74b73a5e</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>PRAD</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>188</p></td>
+<td class="confluenceTd">
+<p>233</p></td>
+<td class="confluenceTd">
+<p>12162</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/prad/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_PRAD.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>11.9MB</p></td>
+<td class="confluenceTd">
+<p>17 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>f1cd2b41bfec0d040da2bad34f12a3d2</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>261</p></td>
+<td class="confluenceTd">
+<p>309</p></td>
+<td class="confluenceTd">
+<p>19400</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/prad/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_PRAD.IlluminaGA_DNASeq_curated.Level_2.1.4.0/PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>18.1MB</p></td>
+<td class="confluenceTd">
+<p>14 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>a0551ad00bb1f216bdeaef3c4aafed92</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>425</p></td>
+<td class="confluenceTd">
+<p>473</p></td>
+<td class="confluenceTd">
+<p>27263</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/prad/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_PRAD.IlluminaGA_DNASeq_automated.Level_2.1.5.0/PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v6.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_PRAD_PAIR_Capture_All_Pairs_QCPASS_v6.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>25.4MB</p></td>
+<td class="confluenceTd">
+<p>05 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>c9ad2faf25bff3ca5ffeb2f7ffe8f433</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>83</p></td>
+<td class="confluenceTd">
+<p>5917</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/prad/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_PRAD.IlluminaGA_DNASeq.Level_2.1.3.0/PR-TCGA-Analysis_set.aggregated.tcga.somatic.maf" class="external-link" rel="nofollow">PR-TCGA-Analysis_set.aggregated.tcga.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>4.9MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>c96298465dae89b2f41308262b3d6999</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>263</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>9437</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/prad/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_PRAD.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_PRAD.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_PRAD.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>3.4MB</p></td>
+<td class="confluenceTd">
+<p>08 Jan 2014</p></td>
+<td class="confluenceTd">
+<p>9008c2cca6ad337e712fcda47de6c47b</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="2">
+<p>READ</p></th>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>35</p></td>
+<td class="confluenceTd">
+<p>9256</p></td>
+<td class="confluenceTd">
+<p>41</p></td>
+<td class="confluenceTd">
+<p>1.7.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/read/gsc/hgsc.bcm.edu/solid_dnaseq/mutations/hgsc.bcm.edu_READ.SOLiD_DNASeq.Level_2.1.7.0/hgsc.bcm.edu_READ.SOLiD_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_READ.SOLiD_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.8MB</p></td>
+<td class="confluenceTd">
+<p>30 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>84d237db5eb2ec06134024f4d9284d60</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>81</p></td>
+<td class="confluenceTd">
+<p>81</p></td>
+<td class="confluenceTd">
+<p>25003</p></td>
+<td class="confluenceTd">
+<p>47</p></td>
+<td class="confluenceTd">
+<p>1.6.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/read/gsc/hgsc.bcm.edu/illuminaga_dnaseq/mutations/hgsc.bcm.edu_READ.IlluminaGA_DNASeq.Level_2.1.6.0/hgsc.bcm.edu_READ.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_READ.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.8MB</p></td>
+<td class="confluenceTd">
+<p>18 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>0728b040ad5dd2ea9668561716d12791</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>SARC</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>255</p></td>
+<td class="confluenceTd">
+<p>63060</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/sarc/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_SARC.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_SARC.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_SARC.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>17.6MB</p></td>
+<td class="confluenceTd">
+<p>03 Feb 2015</p></td>
+<td class="confluenceTd">
+<p>74a10d00d164b697fcd95a165dde8742</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>32421</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/sarc/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_SARC.IlluminaGA_DNASeq_automated.Level_2.1.0.0/SARC_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">SARC_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>29.0MB</p></td>
+<td class="confluenceTd">
+<p>11 Feb 2015</p></td>
+<td class="confluenceTd">
+<p>7aa3dc0a55fa64a119b469a598607175</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>247</p></td>
+<td class="confluenceTd">
+<p>247</p></td>
+<td class="confluenceTd">
+<p>26507</p></td>
+<td class="confluenceTd">
+<p>77</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/sarc/gsc/genome.wustl.edu/illuminahiseq_dnaseq_automated/mutations/genome.wustl.edu_SARC.IlluminaHiSeq_DNASeq_automated.Level_2.1.1.0/genome.wustl.edu_SARC.IlluminaHiSeq_DNASeq_automated.1.1.0.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_SARC.IlluminaHiSeq_DNASeq_automated.1.1.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>16.1MB</p></td>
+<td class="confluenceTd">
+<p>15 May 2015</p></td>
+<td class="confluenceTd">
+<p>5f2a45a4679ee7f51bff49515f291e91</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>259</p></td>
+<td class="confluenceTd">
+<p>22185</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/sarc/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_SARC.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_SARC.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_SARC.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.8MB</p></td>
+<td class="confluenceTd">
+<p>12 Feb 2015</p></td>
+<td class="confluenceTd">
+<p>f68f9a2195a2f31e179ada4c8d54ae50</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>SKCM</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>298</p></td>
+<td class="confluenceTd">
+<p>297</p></td>
+<td class="confluenceTd">
+<p>261659</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/skcm/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_SKCM.IlluminaGA_DNASeq.Level_2.0.3.0/PR_TCGA_SKCM_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_SKCM_PAIR_Capture_All_Pairs_QCPASS_v3.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>254.7MB</p></td>
+<td class="confluenceTd">
+<p>16 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>578a970025ecff4489bf8ccd2f5d6a91</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>346</p></td>
+<td class="confluenceTd">
+<p>345</p></td>
+<td class="confluenceTd">
+<p>290341</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/skcm/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_SKCM.IlluminaGA_DNASeq.Level_2.1.5.0/skcm_clean_pairs.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">skcm_clean_pairs.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>282.7MB</p></td>
+<td class="confluenceTd">
+<p>13 Oct 2013</p></td>
+<td class="confluenceTd">
+<p>a2afad3719c3507170a718b0fa5138f9</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>369</p></td>
+<td class="confluenceTd">
+<p>369</p></td>
+<td class="confluenceTd">
+<p>324163</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/skcm/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_SKCM.IlluminaGA_DNASeq_automated.Level_2.1.4.0/PR_TCGA_SKCM_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_SKCM_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>305.1MB</p></td>
+<td class="confluenceTd">
+<p>22 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>9902325e61936e2b5683dd5c70c0657b</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>344</p></td>
+<td class="confluenceTd">
+<p>344</p></td>
+<td class="confluenceTd">
+<p>190441</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/skcm/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_SKCM.IlluminaGA_DNASeq_automated.Level_2.1.2.0/hgsc.bcm.edu_SKCM.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_SKCM.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>68.3MB</p></td>
+<td class="confluenceTd">
+<p>17 Apr 2014</p></td>
+<td class="confluenceTd">
+<p>38167b6da899ebd0bbf4d3cefbb4e378</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="7">
+<p>STAD</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>28213</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_STAD.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_STAD.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_STAD.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.6MB</p></td>
+<td class="confluenceTd">
+<p>25 Nov 2014</p></td>
+<td class="confluenceTd">
+<p>282c3436e4654a36e2f56b8951751eb4</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>279</p></td>
+<td class="confluenceTd">
+<p>315</p></td>
+<td class="confluenceTd">
+<p>181499</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.4.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_STAD.IlluminaGA_DNASeq.Level_2.0.4.0/PR_TCGA_STAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_STAD_PAIR_Capture_All_Pairs_QCPASS_v4.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>180.5MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>77fdad4d53619dc133d05e32d68aab65</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>289</p></td>
+<td class="confluenceTd">
+<p>148520</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_STAD.IlluminaGA_DNASeq_curated.Level_2.1.3.0/QCv5_blacklist_Pass.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">QCv5_blacklist_Pass.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>128.7MB</p></td>
+<td class="confluenceTd">
+<p>13 Feb 2014</p></td>
+<td class="confluenceTd">
+<p>ef02d98be7388051e5fe3a98e1520777</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>92</p></td>
+<td class="confluenceTd">
+<p>31760</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.6.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.1.6.0/An_TCGA_STAD_External_capture_All_Pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">An_TCGA_STAD_External_capture_All_Pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>30.2MB</p></td>
+<td class="confluenceTd">
+<p>05 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>8b766130598d587839b13f7834dc2c5e</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>288</p></td>
+<td class="confluenceTd">
+<p>288</p></td>
+<td class="confluenceTd">
+<p>115357</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_STAD.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_STAD.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>41.4MB</p></td>
+<td class="confluenceTd">
+<p>15 Apr 2014</p></td>
+<td class="confluenceTd">
+<p>fc0ac65f519e92d25841950e4154e867</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>24521</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>2.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.2.0.0/hgsc.bcm.edu_STAD.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_STAD.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.9MB</p></td>
+<td class="confluenceTd">
+<p>08 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>ec8265c286db73650d1f8df5e5d8d8da</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>91</p></td>
+<td class="confluenceTd">
+<p>92</p></td>
+<td class="confluenceTd">
+<p>20136</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>2.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/stad/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.2.0.0/ucsc.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.2.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_STAD.IlluminaGA_DNASeq_automated.Level_2.2.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>7.0MB</p></td>
+<td class="confluenceTd">
+<p>03 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>e0b8c01b20300157839334adca0984fb</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="5">
+<p>TGCT</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>156</p></td>
+<td class="confluenceTd">
+<p>150</p></td>
+<td class="confluenceTd">
+<p>17742</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/tgct/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_TGCT.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_TGCT.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_TGCT.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.1MB</p></td>
+<td class="confluenceTd">
+<p>09 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>a45ec319311f9fb577b67beb5bbeccd1</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>156</p></td>
+<td class="confluenceTd">
+<p>150</p></td>
+<td class="confluenceTd">
+<p>7683</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/tgct/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_TGCT.IlluminaGA_DNASeq_automated.Level_2.1.0.0/TGCT_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">TGCT_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>6.9MB</p></td>
+<td class="confluenceTd">
+<p>13 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>830814479efb64bf0b5ce3a6ce9e6b5c</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>155</p></td>
+<td class="confluenceTd">
+<p>149</p></td>
+<td class="confluenceTd">
+<p>14672</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/tgct/gsc/hgsc.bcm.edu/mixed_dnaseq_curated/mutations/hgsc.bcm.edu_TGCT.Mixed_DNASeq_curated.Level_2.1.0.0/hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.3MB</p></td>
+<td class="confluenceTd">
+<p>16 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>19073e0848820c0becf005e3212828ca</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>156</p></td>
+<td class="confluenceTd">
+<p>150</p></td>
+<td class="confluenceTd">
+<p>3695</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/tgct/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_TGCT.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.3MB</p></td>
+<td class="confluenceTd">
+<p>28 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>87bd2fb1801dfd52deef6ce625eb7450</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>156</p></td>
+<td class="confluenceTd">
+<p>150</p></td>
+<td class="confluenceTd">
+<p>3063</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/tgct/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_TGCT.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_TGCT.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_TGCT.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.1MB</p></td>
+<td class="confluenceTd">
+<p>20 Jan 2015</p></td>
+<td class="confluenceTd">
+<p>81c4b66488f2afc79e5aedb13cf434d3</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>THCA</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>435</p></td>
+<td class="confluenceTd">
+<p>430</p></td>
+<td class="confluenceTd">
+<p>19758</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thca/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_THCA.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_THCA.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_THCA.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.5MB</p></td>
+<td class="confluenceTd">
+<p>08 May 2015</p></td>
+<td class="confluenceTd">
+<p>db6ba364a5afdfb27dd3f07882f547f9</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>366</p></td>
+<td class="confluenceTd">
+<p>382</p></td>
+<td class="confluenceTd">
+<p>9733</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>0.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thca/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_THCA.IlluminaGA_DNASeq.Level_2.0.2.0/PR_TCGA_THCA_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_THCA_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.5MB</p></td>
+<td class="confluenceTd">
+<p>27 Mar 2013</p></td>
+<td class="confluenceTd">
+<p>50dc74644d1ce1d2ce9be18b9834dde9</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>405</p></td>
+<td class="confluenceTd">
+<p>425</p></td>
+<td class="confluenceTd">
+<p>7458</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.5.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thca/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_THCA.IlluminaGA_DNASeq.Level_2.1.5.0/AN_TCGA_THCA_PAIR_Capture_ALLQC_14Aug2013_429.aggregated.capture.tcga.uuid.somatic.maf" class="external-link" rel="nofollow">AN_TCGA_THCA_PAIR_Capture_ALLQC_14Aug2013_429.aggregated.capture.tcga.uuid.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.1MB</p></td>
+<td class="confluenceTd">
+<p>17 Oct 2013</p></td>
+<td class="confluenceTd">
+<p>3edf75d78bed78876a12808ab710ca01</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>406</p></td>
+<td class="confluenceTd">
+<p>403</p></td>
+<td class="confluenceTd">
+<p>4645</p></td>
+<td class="confluenceTd">
+<p>48</p></td>
+<td class="confluenceTd">
+<p>1.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thca/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_THCA.IlluminaGA_DNASeq_automated.Level_2.1.1.0/hgsc.bcm.edu_THCA.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_THCA.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.8MB</p></td>
+<td class="confluenceTd">
+<p>23 Nov 2013</p></td>
+<td class="confluenceTd">
+<p>65ef1fc5a4a5066fdb8905f1855fdfad</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>THYM</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>123</p></td>
+<td class="confluenceTd">
+<p>123</p></td>
+<td class="confluenceTd">
+<p>18973</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thym/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_THYM.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_THYM.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_THYM.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.3MB</p></td>
+<td class="confluenceTd">
+<p>23 Feb 2015</p></td>
+<td class="confluenceTd">
+<p>d7fc6202aad1ed19d258ace0b3da0d89</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>123</p></td>
+<td class="confluenceTd">
+<p>125</p></td>
+<td class="confluenceTd">
+<p>6707</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thym/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_THYM.IlluminaGA_DNASeq_automated.Level_2.1.0.0/THYM_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">THYM_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>5.3MB</p></td>
+<td class="confluenceTd">
+<p>06 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>bdfe67787727a162a5ca2758dab8f246</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>121</p></td>
+<td class="confluenceTd">
+<p>123</p></td>
+<td class="confluenceTd">
+<p>24119</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thym/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_THYM.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_THYM.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_THYM.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>8.9MB</p></td>
+<td class="confluenceTd">
+<p>06 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>5dc47fb415d31d217ae52dd2ed15326d</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>123</p></td>
+<td class="confluenceTd">
+<p>125</p></td>
+<td class="confluenceTd">
+<p>4977</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/thym/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_THYM.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_THYM.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_THYM.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.7MB</p></td>
+<td class="confluenceTd">
+<p>04 Mar 2015</p></td>
+<td class="confluenceTd">
+<p>6a38ec279351197da08ce5ce5b3d22cd</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="3">
+<p>UCEC</p></th>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>55685</p></td>
+<td class="confluenceTd">
+<p>79</p></td>
+<td class="confluenceTd">
+<p>100.1.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucec/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_UCEC.IlluminaGA_DNASeq.Level_2.100.1.0/step4_An_UCEC_194.aggregated.tcga.maf2.4.migrated.somatic.maf" class="external-link" rel="nofollow">step4_An_UCEC_194.aggregated.tcga.maf2.4.migrated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>55.2MB</p></td>
+<td class="confluenceTd">
+<p>27 Jun 2013</p></td>
+<td class="confluenceTd">
+<p>18c2b658dd2a76509bac679bef0b45fd</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>194</p></td>
+<td class="confluenceTd">
+<p>55685</p></td>
+<td class="confluenceTd">
+<p>86</p></td>
+<td class="confluenceTd">
+<p>1.3.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucec/gsc/broad.mit.edu/illuminaga_dnaseq/mutations/broad.mit.edu_UCEC.IlluminaGA_DNASeq.Level_2.1.3.0/An_UCEC_194.aggregated.tcga.somatic.maf" class="external-link" rel="nofollow">An_UCEC_194.aggregated.tcga.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>48.3MB</p></td>
+<td class="confluenceTd">
+<p>15 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>bf76fe7dd827919958e55543471c177a</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>genome.wustl.edu</p></td>
+<td class="confluenceTd">
+<p>248</p></td>
+<td class="confluenceTd">
+<p>248</p></td>
+<td class="confluenceTd">
+<p>184861</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.7.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucec/gsc/genome.wustl.edu/illuminaga_dnaseq/mutations/genome.wustl.edu_UCEC.IlluminaGA_DNASeq.Level_2.1.7.0/genome.wustl.edu_UCEC.IlluminaGA_DNASeq.Level_2.1.7.somatic.maf" class="external-link" rel="nofollow">genome.wustl.edu_UCEC.IlluminaGA_DNASeq.Level_2.1.7.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>73.7MB</p></td>
+<td class="confluenceTd">
+<p>02 Jul 2013</p></td>
+<td class="confluenceTd">
+<p>dd28fc297e773dd72d23ef5d9385e117</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>UCS</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>9652</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucs/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_UCS.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_UCS.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_UCS.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.6MB</p></td>
+<td class="confluenceTd">
+<p>07 May 2015</p></td>
+<td class="confluenceTd">
+<p>acfa7cca16cd17f734296cd4dabf9692</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>56</p></td>
+<td class="confluenceTd">
+<p>56</p></td>
+<td class="confluenceTd">
+<p>5885</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucs/gsc/broad.mit.edu/illuminaga_dnaseq_curated/mutations/broad.mit.edu_UCS.IlluminaGA_DNASeq_curated.Level_2.1.0.0/AN_TCGA_UCS_PAIR_Capture_56.aggregated.capture.tcga.uuid.curated.somatic.maf" class="external-link" rel="nofollow">AN_TCGA_UCS_PAIR_Capture_56.aggregated.capture.tcga.uuid.curated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>6.0MB</p></td>
+<td class="confluenceTd">
+<p>07 Jan 2014</p></td>
+<td class="confluenceTd">
+<p>9e783ba7397db856c0d50e45c3031bff</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>11363</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucs/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_UCS.IlluminaGA_DNASeq_automated.Level_2.1.2.0/PR_TCGA_UCS_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">PR_TCGA_UCS_PAIR_Capture_All_Pairs_QCPASS_v2.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>10.8MB</p></td>
+<td class="confluenceTd">
+<p>15 Dec 2014</p></td>
+<td class="confluenceTd">
+<p>e2775effe32fbc9a0ed919130dd6ab2d</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>57</p></td>
+<td class="confluenceTd">
+<p>8190</p></td>
+<td class="confluenceTd">
+<p>49</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/ucs/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_UCS.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_UCS.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_UCS.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.9MB</p></td>
+<td class="confluenceTd">
+<p>24 Mar 2014</p></td>
+<td class="confluenceTd">
+<p>bfcabd0f2617d4bf04e3fbf7679588d5</p></td></tr>
+<tr>
+<th class="confluenceTh" rowspan="4">
+<p>UVM</p></th>
+<td class="confluenceTd">
+<p>bcgsc.ca</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>2253</p></td>
+<td class="confluenceTd">
+<p>34</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/uvm/gsc/bcgsc.ca/illuminahiseq_dnaseq_automated/mutations/bcgsc.ca_UVM.IlluminaHiSeq_DNASeq_automated.Level_2.1.0.0/bcgsc.ca_UVM.IlluminaHiSeq_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">bcgsc.ca_UVM.IlluminaHiSeq_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>630.4KB</p></td>
+<td class="confluenceTd">
+<p>24 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>ce79aa8309017d349f7a5e73de16e181</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>broad.mit.edu</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>2526</p></td>
+<td class="confluenceTd">
+<p>90</p></td>
+<td class="confluenceTd">
+<p>1.2.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/uvm/gsc/broad.mit.edu/illuminaga_dnaseq_automated/mutations/broad.mit.edu_UVM.IlluminaGA_DNASeq_automated.Level_2.1.2.0/UVM_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf" class="external-link" rel="nofollow">UVM_pairs.aggregated.capture.tcga.uuid.automated.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>2.3MB</p></td>
+<td class="confluenceTd">
+<p>01 Sep 2015</p></td>
+<td class="confluenceTd">
+<p>607ba3026a9682abbbf8930f6156f895</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>hgsc.bcm.edu</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>2934</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/uvm/gsc/hgsc.bcm.edu/illuminaga_dnaseq_automated/mutations/hgsc.bcm.edu_UVM.IlluminaGA_DNASeq_automated.Level_2.1.0.0/hgsc.bcm.edu_UVM.IlluminaGA_DNASeq.1.somatic.maf" class="external-link" rel="nofollow">hgsc.bcm.edu_UVM.IlluminaGA_DNASeq.1.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>1.1MB</p></td>
+<td class="confluenceTd">
+<p>28 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>1eadf49ad95d9dda23b954d17ff6096f</p></td></tr>
+<tr>
+<td class="confluenceTd">
+<p>ucsc.edu</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>80</p></td>
+<td class="confluenceTd">
+<p>1575</p></td>
+<td class="confluenceTd">
+<p>50</p></td>
+<td class="confluenceTd">
+<p>1.0.0</p></td>
+<td class="confluenceTd">
+<p><a href="https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/uvm/gsc/ucsc.edu/illuminaga_dnaseq_automated/mutations/ucsc.edu_UVM.IlluminaGA_DNASeq_automated.Level_2.1.0.0/ucsc.edu_UVM.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf" class="external-link" rel="nofollow">ucsc.edu_UVM.IlluminaGA_DNASeq_automated.Level_2.1.0.0.somatic.maf</a></p></td>
+<td class="confluenceTd">
+<p>562.0KB</p></td>
+<td class="confluenceTd">
+<p>28 Oct 2014</p></td>
+<td class="confluenceTd">
+<p>54d9e9cd74115f0d0f01b1346b830075</p></td></tr></table></h4>
+    
+        </div>
+
+        <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+         <rdf:Description
+    rdf:about="https://confluence.broadinstitute.org/display/GDAC/MAF+Dashboard"
+    dc:identifier="https://confluence.broadinstitute.org/display/GDAC/MAF+Dashboard"
+    dc:title="MAF Dashboard"
+    trackback:ping="https://confluence.broadinstitute.org/rpc/trackback/55382321"/>
+</rdf:RDF>
+-->
+
+                    <script type="text/x-template" title="labels-dialog-div">
+
+    
+    <div id="labels-dialog">
+        <div class="labels-editor">
+            <span class="errorMessage error" id="errorSpan"></span>
+            <form method="GET" action="" id="add-labels-form">
+                <div id="labelOperationErrorContainer">
+                    <span class="error"><span class="errorMessage" id="labelOperationErrorMessage"></span></span>
+                </div>
+    
+                <div id="label-input-fields">
+                    <input autocomplete="off" id="labelsString" name="labelsString" value="">
+                    <input id="add-labels-editor-button" type="submit" class="add-labels" value="Add">
+                </div>
+                <div id="labelsAutocompleteList" class="aui-dd-parent resize-to-input" style="width: 417px"></div>
+                <div id="dialog-label-list">
+                    
+<span id="labels-section-title-none" class="no-labels-message" >
+None
+</span>
+<ul class="label-list">
+</ul>
+                </div>
+                <div id="waitImageAndStatus">
+                    <img class="waiting" alt="Please wait" src="/s/en_GB/3152/7/_/images/icons/wait.gif">&nbsp;
+                    <span id="labelOperationStatus" class="smalltext"></span>
+                </div>
+                <div class="labels-tip"></div>
+            </form>
+        </div>
+    </div>
+</script>
+                
+    
+
+
+<div id="labels-section" class="pageSection group">
+    <div class="labels-editor">
+        <span id="labels-section-title" class="label-title">Labels:</span>
+        <div id="labels-section-content" class="content-column">
+            
+<span id="labels-section-title-none" class="no-labels-message" >
+None
+</span>
+<ul class="label-list">
+</ul>
+
+                            <a id="labels-edit" href="#" class="show-labels-editor editor-icon" title="Edit Labels">
+                    <span class="icon icon-edit">Edit Labels</span>
+                </a>
+                    </div>
+    </div>
+</div>
+        
+                    <div id="children-section" class="pageSection children-showing group">
+                
+        <div class="section-header ">
+            <h2 id="children-section-title" class="section-title">
+                <a href="/display/GDAC/MAF+Dashboard?showChildren=false#children" class="children-show-hide">
+                                            3 Child Pages
+                                    </a>
+            </h2>
+
+            <a href="/display/GDAC/MAF+Dashboard?showChildren=false#children" class="children-show-hide icon"></a>
+            <!--
+            <span class="noprint grey">
+                <a class="children-subtitle" href="/pages/listpages-dirview.action?key=GDAC&amp;openId=55382321#selectedPageInHierarchy">Reorder Pages</a>
+                            </span>
+            -->
+        </div>
+        <div id="page-children" class="pageSectionBody children-loaded">
+                                        <span class="child-display">
+                                     <span class="icon icon-page" title="Page">Page:</span>
+                         <a href="/display/GDAC/DCC+MAFs">DCC MAFs</a>
+                         </span>
+                            <span class="child-display">
+                                     <span class="icon icon-page" title="Page">Page:</span>
+                         <a href="/display/GDAC/MAFs+Ingested+into+Broad+GDAC+Firehose">MAFs Ingested into Broad GDAC Firehose</a>
+                         </span>
+                            <span class="child-display">
+                                     <span class="icon icon-page" title="Page">Page:</span>
+                         <a href="/pages/viewpage.action?pageId=60458178">Multi-Center Mutation Calls &amp; MAFs</a>
+                         </span>
+                                </div>
+        </div>
+    
+            
+
+
+
+
+            
+    
+
+
+
+
+
+
+
+<div id="comments-section" class="pageSection group">
+    
+    
+    
+    
+    </div>
+
+
+            
+</div>
+
+
+    
+
+
+
+    
+    
+
+    
+    
+    
+
+
+    
+
+
+
+        <br class="clear">
+    </div><!-- \#main -->
+    
+<div id="footer">
+                                                <p class="license license-community">
+                  Powered by a free <b>Atlassian Confluence Community License</b> granted to Broad Institute. <a href="http://www.atlassian.com/c/conf/11460">Evaluate Confluence today</a>.<br>
+                </p>
+                        
+    <ul id="poweredby">
+        <li class="noprint">Powered by <a href="http://www.atlassian.com/software/confluence" class="hover-footer-link">Atlassian Confluence</a> <span id='footer-build-information'>4.1.10</span>, the <a href="http://www.atlassian.com/software/confluence/tour/enterprise-wiki.jsp" class="hover-footer-link">Enterprise Wiki</a></li>
+        <li class="print-only">Printed by Atlassian Confluence 4.1.10, the Enterprise Wiki.</li>        
+        <li class="noprint"> &nbsp;&middot;&nbsp; <a href="http://jira.atlassian.com/secure/BrowseProject.jspa?id=10470" class="hover-footer-link">Report a bug</a></li>
+        <li class="noprint"> &nbsp;&middot;&nbsp; <a href="http://www.atlassian.com/about/connected.jsp?s_kwcid=Confluence-stayintouch" class="hover-footer-link">Atlassian News</a></li>
+    </ul>
+
+    
+
+            
+    </div></div><!-- \#full-height-container -->
+</div><!-- \#page -->
+</body>
+</html>
